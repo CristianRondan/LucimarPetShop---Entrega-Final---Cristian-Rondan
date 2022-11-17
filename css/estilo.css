@@ -1498,7 +1498,7 @@ transform: scale(1.1);
 .nosotros__historia--section--div p{
     width: 30%;
     height: 1fr;
-    font-size: 35px;
+    font-size: 1.5rem;
     text-align: left;
 }
 
@@ -1530,7 +1530,7 @@ transform: scale(1.1);
 .nosotros__motivacion--section--div p{
     width: 30%;
     height: 1fr;
-    font-size: 35px;
+    font-size: 1.5rem;
     text-align: left;
 }
 
