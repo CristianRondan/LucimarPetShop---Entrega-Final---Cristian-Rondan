@@ -1,0 +1,1539 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: #2a4b84;
+}
+
+/* estilos de logo */
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.8rem;
+}
+
+header div img{
+    background-color: #ffffff;
+    height: 4rem;
+    border-radius: 50%;
+    padding: 0.3rem;
+}
+
+/* estilos del nav de BT */
+
+.navbar-toggler{
+    background-color: #ffffff;
+}
+
+.navbarbr__div{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    
+}
+
+.navbt__div a{
+    background-color: #ffffff;
+    color:#2a4b84;
+    text-align: center;
+    margin: 0.8rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* ------------------------------ footer general --------------------------------------------------*/
+
+/* footer */
+
+footer {
+    padding: 1.8rem;
+    color: #b9b9b9;
+    background-color: #3f3f3f;
+}
+
+.footer__nav--ul{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+footer nav ul ul {
+    list-style: none;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+
+}
+
+footer nav ul ul h4 a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #b5b5b5;
+}
+
+footer nav ul ul li a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #b5b5b5;
+}
+
+/*animaciones de los link del footer */
+
+footer nav ul ul h4:hover{
+    transform: scale(1.1);
+    margin-bottom: 3px;
+}
+
+footer nav ul ul li:hover{
+    transform: scale(1.1);
+    margin-bottom: 3px;
+}
+
+
+/* ------------------------------ estilos de index presentacion ------------------------------- */
+
+
+
+.index__container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    grid-template-areas: 
+        "header"
+        "present"
+        "productos"
+        "dondeestamos"
+        "redes"
+        "footer";
+}
+
+.index__header{
+    grid-area: header;
+}
+
+.index__presentacion--section{
+    grid-area: present;
+    color: #2a4b84;
+    background-color:#ffffff;
+    padding: 1.5rem;
+}
+
+.index__presentacion--section h1{
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.index__presentacion--section--div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20%;
+}
+
+.index__presentacion--section--div p{
+    width: 400px;
+    font-size: 1.8rem;
+    text-align: left;
+}
+
+.index__presentacion--section--div img{
+    width: 500px;
+}
+
+/* index seccion de productos */
+
+
+.index__productos--section{
+    grid-area: productos;
+    color: #ffffff;
+    padding: 1.5rem;
+}
+
+.index__productos--section h2{
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 1.8rem;
+}
+
+.index__productos--section--div{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.index__productos--section--article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.index__productos--section--div h3{
+    padding: 1.8rem;
+    font-size: 1.8rem;
+}
+
+.index__productos--section--div a{
+    font-size: 1.8rem;
+    background-color: #ffffff;
+    color: #2a4b84;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* animaciones de "ver mas" */
+
+.index__productos--section--div a:hover{
+    color: #c3415e;
+    box-shadow: 5px 5px 5px #c3415e;
+    transform: scale(1.1);
+}
+
+
+.index__productos--section--div img{
+    height: 400px;
+    background-color: #c3415e;
+    border-radius: 15%;
+}
+
+/* index seccion donde estamos */
+
+
+.index__dondeestamos--section{
+    grid-area: dondeestamos;
+
+    color: #2a4b84;
+    background-color:#ffffff;
+    padding: 1.8rem;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    grid-template-areas: 
+        "titulo titulo"
+        "img parrafo"
+        "img link";
+
+    justify-items: center;
+    align-items: center;
+}
+
+.index__dondeestamos--section h2{
+    grid-area: titulo;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+.index__dondeestamos--section img{
+    grid-area: img;
+}
+
+.index__dondeestamos--section p{
+    grid-area: parrafo;
+    width: 50%;
+    font-size: 1.8rem;
+    text-align: right;
+}
+
+.index__dondeestamos--section a{
+    grid-area: link;
+    background-color: #2a4b84;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+}
+
+/* animaciones del boton "ubicanos" */
+
+.index__dondeestamos--section a:hover{
+    box-shadow: 5px 5px 5px #c3415e;
+    transform: scale(1.1);
+}
+
+/* index seccion nuestras redes */
+
+.index__nuestrasredes--section{
+    grid-area: redes;
+    color: #ffffff;
+    padding: 1.8rem;
+}
+
+.index__nuestrasredes--section h2{
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 1.8rem;
+}
+
+.index__nuestrasredes--section--div{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1rem;
+    padding: 0.7rem;
+    font-size: 1.5rem;
+}
+
+.index__nuestrasredes--section--div--article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    padding: 0.8rem;
+}
+
+.index__nuestrasredes--section--div--article a{
+    color: #2a4b84;
+    font-weight: bold;
+    padding: 0.2rem;
+    text-decoration: none;
+
+}
+
+/* animaciones de los botones de redes */
+
+.index__nuestrasredes--section--div--article:hover{
+    color: #c3415e;
+    box-shadow: 5px 5px 5px #c3415e;
+    transform: scale(1.1);
+}
+
+
+.section__nuestrasredes--img{
+    height: 50px;
+    padding: 0.2rem;
+}
+
+/* index footer */
+
+.index__footer{
+    grid-area: footer;
+}
+
+/* -------------------------- mq mobile index ---------------------------------- */
+
+@media screen and (max-width:425px) {
+
+    header div img{
+        width: 30%;
+        height: 30%;
+    }
+
+    /* index nav */
+
+    .navbar-toggler-icon{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .navbt__div a{
+        margin: 0.5rem;
+        padding: 0.3rem;
+        border-radius: 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+    
+    }
+    
+    /* index seccion presentacion */
+
+
+    .index__presentacion--section h1{
+        font-size: 1.4rem;
+    }
+
+    .index__presentacion--section--div p{
+        text-align: center;
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .index__presentacion--section--div img{
+        width: 90%;
+    }
+
+    /* index seccion productos */
+
+    .index__productos--section h2{
+        font-size: 1.2rem;
+    }
+
+    .index__productos--section--article h3{
+        font-size: 1rem;
+    }
+
+    .index__productos--section--article img{
+        width: 80%;
+        height: 80%;
+    }
+
+
+    .index__productos--section--article a{
+        font-size: 1rem;
+    }
+
+    /* index seccion donde estamos */
+
+    .index__dondeestamos--section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .index__dondeestamos--section img{
+        width: 90%;
+    }
+
+    /* index seccion donde estamos */
+
+    .index__dondeestamos--section h2{
+        font-size: 1.2rem;
+    }
+
+    .index__dondeestamos--section p{
+        text-align: center;
+        width: 90%;
+        font-size: 1.2rem;
+    }
+    
+    .index__dondeestamos--section a{
+        font-size: 1rem;
+    }
+
+    /* index seccion nuestras redes */
+
+    .index__nuestrasredes--section h2{
+        font-size: 1.2rem;
+    }
+
+    .index__nuestrasredes--section--div{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .index__nuestrasredes--section--div--article{
+        padding: 0.5rem;
+        width: 70%;
+    }
+
+    .index__nuestrasredes--section--div--article a{
+        font-size:  0.8rem;
+    }
+
+    .index__nuestrasredes--section--div--article img{
+        width: 20%;
+        height: 20%;
+    }
+
+
+    /* index seccion footer */
+
+    .footer__nav--ul{
+        flex-direction: column;
+        align-items: left;
+        margin-left: 4rem;
+        gap: 0.1rem;
+    }
+
+    footer nav ul ul {
+        padding: 0.5rem;
+    }
+
+
+    footer nav ul ul h4 a{
+        font-size: 0.8rem;
+    }
+    
+    footer nav ul ul li a{
+        font-size: 0.8rem;
+    }
+    
+}
+
+
+/* ---------------------------- estilos de pagina perros ------------------- */
+
+.perros__container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    grid-template-areas: 
+        "header"
+        "presentacion"
+        "productos"
+        "cachorros"
+        "adultos"
+        "footer";
+}
+
+.perros__presentacion--section{
+    grid-area: header;
+    color: #2a4b84;
+    background-color:#ffffff;
+    padding: 2rem;
+}
+
+.perros__presentacion--section h1{
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.perros__presentacion--section--div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20%;
+}
+
+.perros__presentacion--section--div p{
+    font-size: 2rem;
+    text-align: right;
+    width: 20%;
+}
+
+.perros__presentacion--section--div img{
+    width: 25%;
+    height: 25%;
+}
+
+/* perros seccion productos */
+
+.perros__productos--section{
+    grid-area: productos;
+    color: #ffffff;
+    padding: 2rem;
+}
+
+.perros__productos--section h2{
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 1.8rem;
+}
+
+.perros__productos--section--div{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.productos__section--article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.perros__productos--section--div h3{
+    padding: 1.8rem;
+    font-size: 1.8rem;
+}
+
+.perros__productos--section--div div{
+    width: 22rem;
+    height: 22rem;
+    background-color: #c3415e;
+    border-radius: 15%;
+}
+
+.productos__section--article a{
+    font-size: 1.8rem;
+    background-color: #ffffff;
+    color: #2a4b84;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* animaciones de los links "ver mas" */
+
+.productos__section--article a:hover{
+    color: #c3415e;
+    box-shadow: 5px 5px 5px #c3415e;
+    transform: scale(1.1);
+}
+
+
+
+/* seccion productos cachorros */
+
+.perros__cachorros--section{
+    grid-area: cachorros;
+    color: #2a4b84;
+    background-color:#ffffff;
+    padding: 20px;
+}
+
+.perros__cachorros--section h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.perros__cachorros--section--div{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.perros__cachorros--section--div--article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.perros__cachorros--section--div--article h3{
+    padding: 0.8rem;
+    font-size: 1.8rem;
+}
+
+.perros__cachorros--section--div--article p{
+    padding: 1.8rem;
+    font-size: 1rem;
+    width: 22rem;
+    height: 12rem;
+}
+
+
+.perros__cachorros--section--div--article div{
+    height: 22rem;
+    width: 22rem;
+    background-color: #b1a1a5;
+    border-radius: 15%;
+    padding: 0.5rem;
+}
+
+.perros__cachorros--section--div--article img{
+    height: 100%;
+}
+
+/* seccion perros adultos */
+
+.perros__adultos--section{
+    grid-area: adultos;
+    color: #ffffff;
+    padding: 1.8rem;
+}
+
+.perros__adultos--section h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.perros__adultos--section--div{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.perros__adultos--section--div--article h3{
+    padding: 0.8rem;
+    font-size: 1.8rem;
+}
+
+.perros__adultos--section--div--article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.perros__adultos--section--div--article p{
+    padding: 1.8rem;
+    font-size: 1rem;
+    width: 23rem;
+    height: 15rem;
+}
+
+.perros__adultos--section--div--article div{
+    height: 22rem;
+    width: 22rem;
+    background-color: #c3415e;
+    border-radius: 15%;
+    padding: 0.5rem;
+}
+
+.perros__adultos--section--div--article img{
+    height: 100%;
+}
+
+.perros__footer{
+    grid-area: footer;
+}
+
+/* mq pagina perros */
+
+@media screen and (max-width:425px) {
+
+    .perros__presentacion--section h1{
+        font-size: 1.4rem;
+    }
+
+    .perros__presentacion--section--div p{
+        text-align: center;
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .perros__presentacion--section--div img{
+        width: 70%;
+    }
+    
+    /* seccion productos */
+
+    .perros__productos--section h2{
+        font-size: 1.2rem;
+    }
+
+    .productos__section--article div{
+        height: 18rem;
+        width: 18rem;
+    }
+
+    .productos__section--article div img{
+        height: 90%;
+    }
+
+    .perros__productos--section p{
+        font-size: 1.2rem;
+    }
+
+    /* perros cachorros */
+
+
+    .perros__cachorros--section h2{
+        font-size: 1.2rem;
+    }    
+
+    .perros__cachorros--section--div--article h3{
+        font-size: 1rem;
+    }
+
+    .perros__cachorros--section--div--article div{
+        height: 18rem;
+        width: 18rem;
+    }
+
+    .perros__cachorros--section--div--article p{
+        font-size: 1rem;
+        height: 8rem;
+    }
+
+    /* perros adultos */ 
+
+    .perros__adultos--section h2{
+        font-size: 1.2rem;
+    }
+
+    .perros__adultos--section--div--article div{
+        gap: 2rem;
+    }
+
+    .perros__adultos--section--div--article h3{
+        font-size: 1rem;
+    }
+
+    .perros__adultos--section--div--article div{
+        height: 18rem;
+        width: 18rem;
+    }
+
+    .perros__adultos--section--div--article p{
+        font-size: 1rem;
+        height: 10rem;
+    }
+
+}
+
+
+
+
+/* ------------------------------ pagina productos gatos ------------------------- */
+
+.gatos__presentacion--section{
+    color: #2a4b84;
+    background-color:#ffffff;
+    padding: 20px;
+}
+
+.gatos__presentacion--section h1{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.gatos__presentacion--section--div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 200px;
+}
+
+.gatos__presentacion--section--div p{
+    width: 30%;
+    height: 1fr;
+    font-size: 35px;
+    text-align: left;
+}
+
+.gatos__presentacion--section--div img{
+    height: 350px;
+}
+
+/* gatos seccion productos */
+
+.gatos__productos--section{
+    color: #ffffff;
+    padding: 20px;
+}
+
+.gatos__productos--section h2{
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 30px;
+}
+
+.gatos__productos--section--div{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.gatos__productos--section--div h3{
+    padding: 20px;
+    font-size: 25px;
+}
+
+.gatos__productos--section--div img{
+    height: 400px;
+    background-color: #c3415e;
+    border-radius: 15%;
+}
+
+.gatos__productos--section--div--article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.gatos__productos--section--div--article a{
+    font-size: 1.8rem;
+    background-color: #ffffff;
+    color: #2a4b84;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* animaciones de los links "ver mas" */
+
+.gatos__productos--section--div--article a:hover{
+    color: #c3415e;
+    box-shadow: 5px 5px 5px #c3415e;
+    transform: scale(1.1);
+}
+
+
+/* seccion gatitos */
+
+.gatos__gatitos--section{
+    color: #2a4b84;
+    background-color:#ffffff;
+    padding: 20px;
+}
+
+.gatos__gatitos--section h2{
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 30px;
+}
+
+.gatos__gatitos--section--div{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    text-align: center;
+    padding: 50px;
+}
+
+.gatos__gatitos--section--div--article h3{
+    padding: 20px;
+    font-size: 25px;
+}
+
+.gatos__gatitos--section--div--article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.gatos__gatitos--section--div--article p{
+    padding: 20px;
+    font-size: 20px;
+    width: 350px;
+    height: 200px;
+}
+
+.gatos__gatitos--section--div--article img{
+    height: 400px;
+    background-color: #b1a1a5;
+    border-radius: 15%;
+}
+
+/* seccion gatos adultos */
+
+.gatos__adultos--section{
+    color: #ffffff;
+    padding: 20px;
+}
+
+.gatos__adultos--section h2{
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 30px;
+}
+
+.gatos__adultos--section--div{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    text-align: center;
+    padding: 50px;
+}
+
+.gatos__adultos--section--div--article h3{
+    padding: 20px;
+    font-size: 25px;
+}
+
+.gatos__adultos--section--div--article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.gatos__adultos--section--div--article p{
+    padding: 20px;
+    font-size: 20px;
+    width: 25rem;
+    height: 15rem;
+}
+
+.gatos__adultos--section--div--article img{
+    height: 400px;
+    background-color: #c3415e;
+    border-radius: 15%;
+}
+
+/* ---------------------------------- pagina salud y bienestar ----------------------------------- */
+
+.salud__presentacion--section{
+    color: #2a4b84;
+    background-color:#ffffff;
+    padding: 20px;
+}
+
+.salud__presentacion--section h1{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.salud__presentacion--section--div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 200px;
+}
+
+.salud__presentacion--section--div p{
+    width: 30%;
+    height: 1fr;
+    font-size: 35px;
+    text-align: right;
+}
+
+.salud__presentacion--section--div img{
+    height: 350px;
+}
+
+/* salud y bienestar seccion productos */
+
+.salud__productos--section{
+    color: #ffffff;
+    padding: 20px;
+}
+
+.salud__productos--section h2{
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 30px;
+}
+
+.salud__productos--section--div--article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.salud__productos--section--div{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.salud__productos--section--div h3{
+    padding: 20px;
+    font-size: 25px;
+}
+
+.salud__productos--section--div img{
+    height: 400px;
+    background-color: #c3415e;
+    border-radius: 15%;
+}
+
+.salud__productos--section--div--article a{
+    font-size: 1.8rem;
+    background-color: #ffffff;
+    color: #2a4b84;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    font-weight: bold;
+text-decoration: none;
+}
+
+/* animaciones de los links "ver mas" */
+
+.salud__productos--section--div--article a:hover{
+color: #c3415e;
+box-shadow: 5px 5px 5px #c3415e;
+transform: scale(1.1);
+}
+
+
+/* seccion shampoos */
+
+.salud__shampoos--section{
+    color: #2a4b84;
+    background-color:#ffffff;
+    padding: 20px;
+}
+
+.salud__shampoos--section h2{
+    text-align: center;
+    font-size: 35px;
+}
+
+.salud__shampoos--section--div{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    text-align: center;
+    padding: 2rem;
+}
+
+.salud__shampoos--section--div--article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.salud__shampoos--section--div--article h3{
+    padding: 20px;
+    font-size: 25px;
+}
+
+.salud__shampoos--section--div--article p{
+    font-size: 1.5rem;
+    width: 350px;
+    padding: 1rem;
+}
+
+.salud__shampoos--section--div--article img{
+    height: 22rem;
+    background-color: #b1a1a5;
+    border-radius: 15%;
+}
+
+/* seccion pipietas */
+
+.salud__pipetas--section{
+    color: #ffffff;
+    padding: 20px;
+}
+
+.salud__pipetas--section h2{
+    text-align: center;
+    font-size: 35px;
+}
+
+.salud__pipetas--section--div{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.salud__pipetas--section--div--article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.salud__pipetas--section--div--article h3{
+    padding: 20px;
+    font-size: 25px;
+}
+
+.salud__pipetas--section--div--article p{
+    padding: 20px;
+    font-size: 20px;
+    width: 22rem;
+    height: 10rem;
+}
+
+.salud__pipetas--section--div--article img{
+    height: 400px;
+    background-color: #c3415e;
+    border-radius: 15%;
+}
+
+/* ------------------------- pagina donde estamos ---------------------- */
+
+.dondeestamos__presentacion--section{
+    color: #2a4b84;
+    background-color:#ffffff;
+    padding: 20px;
+}
+
+.dondeestamos__presentacion--section h1{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.dondeestamos__presentacion--section--div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 200px;
+}
+
+.dondeestamos__presentacion--section--div p{
+    width: 30%;
+    height: 1fr;
+    font-size: 35px;
+    text-align: left;
+}
+
+.dondeestamos__presentacion--section--div img{
+    height: 350px;
+}
+
+/* redireccionamiento a google maps */
+
+.dondeestamos__ubicacion--section{
+    color: #ffffff;
+    padding: 1.8rem;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    grid-template-areas: 
+        "titulo titulo"
+        "img parrafo"
+        "img link";
+
+    justify-items: center;
+    align-items: center;
+}
+
+.dondeestamos__ubicacion--section h2{
+    grid-area: titulo;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+.dondeestamos__ubicacion--section img{
+    grid-area: img;
+}
+
+.dondeestamos__ubicacion--section p{
+    grid-area: parrafo;
+    width: 50%;
+    font-size: 1.8rem;
+    text-align: right;
+}
+
+.dondeestamos__ubicacion--section a{
+    grid-area: link;
+    background-color: #ffffff;
+    color: #2a4b84;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+}
+
+/* animaciones del boton "ubicanos" */
+
+.dondeestamos__ubicacion--section a:hover{
+    box-shadow: 5px 5px 5px #c3415e;
+    transform: scale(1.1);
+}
+
+
+/* seccion nuetro local */
+
+.dondeestamos__local--section{
+    color: #2a4b84;
+    background-color:#ffffff;
+    padding: 20px;
+}
+
+.dondeestamos__local--section h2{
+    text-align: center;
+    font-size: 35px;
+}
+
+.carousel-inner{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-color: #2a4b84;
+    border-radius: 50%;
+}
+
+
+/* ---------------------------------- pagina contacto -------------------------------------------- */
+
+.contacto__presentacion--section{
+    color: #2a4b84;
+    background-color:#ffffff;
+    padding: 20px;
+}
+
+.contacto__presentacion--section h1{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.contacto__presentacion--section--div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 200px;
+}
+
+.contacto__presentacion--section--div p{
+    width: 30%;
+    height: 1fr;
+    font-size: 35px;
+    text-align: left;
+}
+
+.contacto__presentacion--section--div img{
+    height: 350px;
+}
+
+/* contacto seccion instagram */
+
+.contacto__instagram--section{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contacto__instagram--section img{
+    width: 30%;
+}
+
+.contacto__instagram--section--div{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    gap: 50px;
+}
+
+.contacto__instagram--section--div:hover{
+    color: #c3415e;
+    box-shadow: 5px 5px 5px #c3415e;
+    transform: scale(1.1);
+}
+
+
+.contacto__instagram--section--div a{
+    color: #2a4b84;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.contacto__instagram--section--div img{
+    height: 70px;
+    width: 70px;
+}
+
+/* seccion contacto facebook */
+
+.contacto__facebook--section{
+    background-color: #ffffff;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contacto__facebook--section img{
+    width: 30%;
+}
+
+.contacto__facebook--section--div{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: #2a4b84;
+    border-radius: 10px;
+    gap: 50px;
+}
+
+.contacto__facebook--section--div:hover{
+    color: #c3415e;
+    box-shadow: 5px 5px 5px #c3415e;
+    transform: scale(1.1);
+}
+
+
+.contacto__facebook--section--div a{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.contacto__facebook--section--div img{
+    height: 70px;
+    width: 70px;
+}
+
+/* seccion contacto whatsapp */
+
+.contacto__whatsapp--section{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contacto__whatsapp--section img{
+    width: 30%;
+}
+
+.contacto__whatsapp--section--div{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    gap: 50px;
+}
+
+.contacto__whatsapp--section--div:hover{
+    color: #c3415e;
+    box-shadow: 5px 5px 5px #c3415e;
+    transform: scale(1.1);
+}
+
+
+.contacto__whatsapp--section--div a{
+    color: #2a4b84;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.contacto__whatsapp--section--div img{
+    height: 70px;
+    width: 70px;
+}
+
+/* -------------------------------------------- pagina sobre nosotros ----------------------------------------- */
+
+.nosotros__historia--section{
+    color: #2a4b84;
+    background-color:#ffffff;
+    padding: 20px;
+}
+
+.nosotros__historia--section h1{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.nosotros__historia--section--div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 200px;
+}
+
+.nosotros__historia--section--div p{
+    width: 30%;
+    height: 1fr;
+    font-size: 35px;
+    text-align: left;
+}
+
+.nosotros__historia--section--div img{
+    width: 45%;
+}
+
+/* nosotros seccion nuestra motivacion */
+
+.nosotros__motivacion--section{
+    color: #ffffff;
+    padding: 20px;
+}
+
+.nosotros__motivacion--section h2{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.nosotros__motivacion--section--div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 200px;
+}
+
+.nosotros__motivacion--section--div p{
+    width: 30%;
+    height: 1fr;
+    font-size: 35px;
+    text-align: left;
+}
+
+.nosotros__motivacion--section--div img{
+    width: 45%;
+}
