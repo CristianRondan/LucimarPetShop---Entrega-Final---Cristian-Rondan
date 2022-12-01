@@ -1,0 +1,1032 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif; }
+
+.index__main .index__presentacion--section div, .perros__main .perros__presentacion--section div, .gatos__main .gatos__presentacion--section div, .salud__main .salud__presentacion--section div, .dondeestamos__main .dondeestamos__presentacion--section div, .contacto__main .contacto__presentacion--section div, .nosotros__main .nosotros__historia--section div, .index__main .index__productos--section div, .perros__main .perros__productos--section div, .gatos__main .gatos__productos--section div, .salud__main .salud__productos--section div, .perros__main .perros__cachorros--section div, .gatos__main .gatos__gatitos--section div, .salud__main .salud__shampoos--section div, .perros__main .perros__adultos--section div, .gatos__main .gatos__adultos--section div, .salud__main .salud__pipetas--section div, .contacto__main .contacto__instagram--section, .contacto__main .contacto__facebook--section, .contacto__main .contacto__whatsapp--section, .contacto__main .contacto__instagram--section div, .contacto__main .contacto__facebook--section div, .contacto__main .contacto__whatsapp--section div, body header .header__logo, .index__main .index__nuestrasredes--section .index__nuestrasredes--section--div, .index__main .index__nuestrasredes--section .index__nuestrasredes--section--div .index__nuestrasredes--section--div--article, .nosotros__main .nosotros__motivacion--section .nosotros__motivacion--section--div {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.index__main .index__productos--section div article, .perros__main .perros__productos--section div article, .gatos__main .gatos__productos--section div article, .salud__main .salud__productos--section div article, .perros__main .perros__cachorros--section div article, .gatos__main .gatos__gatitos--section div article, .salud__main .salud__shampoos--section div article, .perros__main .perros__adultos--section div article, .gatos__main .gatos__adultos--section div article, .salud__main .salud__pipetas--section div article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.index__main .index__presentacion--section, .perros__main .perros__presentacion--section, .gatos__main .gatos__presentacion--section, .salud__main .salud__presentacion--section, .dondeestamos__main .dondeestamos__presentacion--section, .contacto__main .contacto__presentacion--section, .nosotros__main .nosotros__historia--section {
+  color: #2a4b84;
+  background-color: #f0f5f4;
+  padding: 1.5rem; }
+  .index__main .index__presentacion--section h1, .perros__main .perros__presentacion--section h1, .gatos__main .gatos__presentacion--section h1, .salud__main .salud__presentacion--section h1, .dondeestamos__main .dondeestamos__presentacion--section h1, .contacto__main .contacto__presentacion--section h1, .nosotros__main .nosotros__historia--section h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem; }
+  .index__main .index__presentacion--section div, .perros__main .perros__presentacion--section div, .gatos__main .gatos__presentacion--section div, .salud__main .salud__presentacion--section div, .dondeestamos__main .dondeestamos__presentacion--section div, .contacto__main .contacto__presentacion--section div, .nosotros__main .nosotros__historia--section div {
+    flex-wrap: wrap;
+    gap: 15%;
+    padding: 1rem; }
+    .index__main .index__presentacion--section div p, .perros__main .perros__presentacion--section div p, .gatos__main .gatos__presentacion--section div p, .salud__main .salud__presentacion--section div p, .dondeestamos__main .dondeestamos__presentacion--section div p, .contacto__main .contacto__presentacion--section div p, .nosotros__main .nosotros__historia--section div p {
+      font-size: 1.8rem;
+      width: 30%; }
+    .index__main .index__presentacion--section div img, .perros__main .perros__presentacion--section div img, .gatos__main .gatos__presentacion--section div img, .salud__main .salud__presentacion--section div img, .dondeestamos__main .dondeestamos__presentacion--section div img, .contacto__main .contacto__presentacion--section div img, .nosotros__main .nosotros__historia--section div img {
+      width: 30%; }
+
+.index__main .index__productos--section, .perros__main .perros__productos--section, .gatos__main .gatos__productos--section, .salud__main .salud__productos--section {
+  color: #f0f5f4;
+  padding: 1.5rem; }
+  .index__main .index__productos--section h2, .perros__main .perros__productos--section h2, .gatos__main .gatos__productos--section h2, .salud__main .salud__productos--section h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: bold; }
+  .index__main .index__productos--section div, .perros__main .perros__productos--section div, .gatos__main .gatos__productos--section div, .salud__main .salud__productos--section div {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 1rem; }
+    .index__main .index__productos--section div article, .perros__main .perros__productos--section div article, .gatos__main .gatos__productos--section div article, .salud__main .salud__productos--section div article {
+      padding: 1rem; }
+      .index__main .index__productos--section div article h3, .perros__main .perros__productos--section div article h3, .gatos__main .gatos__productos--section div article h3, .salud__main .salud__productos--section div article h3 {
+        font-size: 1.8rem;
+        padding: 1rem; }
+      .index__main .index__productos--section div article div, .perros__main .perros__productos--section div article div, .gatos__main .gatos__productos--section div article div, .salud__main .salud__productos--section div article div {
+        background-color: #c3415e;
+        border-radius: 15%;
+        height: 20rem;
+        width: 20rem;
+        box-shadow: 2px 2px 5px #152e58; }
+        .index__main .index__productos--section div article div img, .perros__main .perros__productos--section div article div img, .gatos__main .gatos__productos--section div article div img, .salud__main .salud__productos--section div article div img {
+          height: 90%;
+          padding: 0.2rem;
+          filter: drop-shadow(2px 2px 5px #791a2f); }
+      .index__main .index__productos--section div article a, .perros__main .perros__productos--section div article a, .gatos__main .gatos__productos--section div article a, .salud__main .salud__productos--section div article a {
+        font-size: 1.8rem;
+        background-color: #f0f5f4;
+        color: #2a4b84;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        border-radius: 0.6rem;
+        font-weight: bold;
+        text-decoration: none; }
+        .index__main .index__productos--section div article a:hover, .perros__main .perros__productos--section div article a:hover, .gatos__main .gatos__productos--section div article a:hover, .salud__main .salud__productos--section div article a:hover {
+          box-shadow: 5px 5px 5px #c3415e;
+          transform: scale(1.1); }
+
+.perros__main .perros__cachorros--section, .gatos__main .gatos__gatitos--section, .salud__main .salud__shampoos--section {
+  color: #f0f5f4;
+  background-color: #f0f5f4;
+  padding: 1.5rem; }
+  .perros__main .perros__cachorros--section h2, .gatos__main .gatos__gatitos--section h2, .salud__main .salud__shampoos--section h2 {
+    color: #2a4b84;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: bold; }
+  .perros__main .perros__cachorros--section div, .gatos__main .gatos__gatitos--section div, .salud__main .salud__shampoos--section div {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+    text-align: center;
+    padding: 1rem; }
+    .perros__main .perros__cachorros--section div article, .gatos__main .gatos__gatitos--section div article, .salud__main .salud__shampoos--section div article {
+      background-color: #2a4b84;
+      border-radius: 2rem; }
+      .perros__main .perros__cachorros--section div article h3, .gatos__main .gatos__gatitos--section div article h3, .salud__main .salud__shampoos--section div article h3 {
+        font-size: 1.8rem;
+        padding: 1rem; }
+      .perros__main .perros__cachorros--section div article div, .gatos__main .gatos__gatitos--section div article div, .salud__main .salud__shampoos--section div article div {
+        background-color: #b1a1a5;
+        border-radius: 10%;
+        height: 20rem;
+        width: 20rem;
+        box-shadow: 2px 2px 5px #152e58; }
+        .perros__main .perros__cachorros--section div article div img, .gatos__main .gatos__gatitos--section div article div img, .salud__main .salud__shampoos--section div article div img {
+          height: 90%;
+          padding: 0.2rem;
+          filter: drop-shadow(2px 2px 5px #7d7174); }
+      .perros__main .perros__cachorros--section div article p, .gatos__main .gatos__gatitos--section div article p, .salud__main .salud__shampoos--section div article p {
+        font-size: 1rem;
+        padding: 1.8rem;
+        height: 12rem;
+        width: 23rem; }
+
+.perros__main .perros__adultos--section, .gatos__main .gatos__adultos--section, .salud__main .salud__pipetas--section {
+  color: #2a4b84;
+  padding: 1.8rem; }
+  .perros__main .perros__adultos--section h2, .gatos__main .gatos__adultos--section h2, .salud__main .salud__pipetas--section h2 {
+    color: #f0f5f4;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: bold; }
+  .perros__main .perros__adultos--section div, .gatos__main .gatos__adultos--section div, .salud__main .salud__pipetas--section div {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 1rem; }
+    .perros__main .perros__adultos--section div article, .gatos__main .gatos__adultos--section div article, .salud__main .salud__pipetas--section div article {
+      background-color: #f0f5f4;
+      border-radius: 2rem; }
+      .perros__main .perros__adultos--section div article h3, .gatos__main .gatos__adultos--section div article h3, .salud__main .salud__pipetas--section div article h3 {
+        font-size: 1.8rem;
+        padding: 1rem; }
+      .perros__main .perros__adultos--section div article div, .gatos__main .gatos__adultos--section div article div, .salud__main .salud__pipetas--section div article div {
+        background-color: #c3415e;
+        border-radius: 15%;
+        height: 20rem;
+        width: 20rem;
+        box-shadow: 2px 2px 5px #7d7174; }
+        .perros__main .perros__adultos--section div article div img, .gatos__main .gatos__adultos--section div article div img, .salud__main .salud__pipetas--section div article div img {
+          height: 90%;
+          padding: 0.2rem;
+          filter: drop-shadow(2px 2px 5px #791a2f); }
+      .perros__main .perros__adultos--section div article p, .gatos__main .gatos__adultos--section div article p, .salud__main .salud__pipetas--section div article p {
+        font-size: 1rem;
+        padding: 1.8rem;
+        height: 12rem;
+        width: 23rem; }
+
+.index__main .index__dondeestamos--section, .dondeestamos__main .dondeestamos__ubicacion--section {
+  color: #2a4b84;
+  background-color: #f0f5f4;
+  padding: 1.8rem;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "titulo titulo" "img parrafo" "img link";
+  justify-items: center;
+  align-items: center; }
+  .index__main .index__dondeestamos--section h2, .dondeestamos__main .dondeestamos__ubicacion--section h2 {
+    grid-area: titulo;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: bold; }
+  .index__main .index__dondeestamos--section img, .dondeestamos__main .dondeestamos__ubicacion--section img {
+    grid-area: img;
+    filter: drop-shadow(2px 2px 5px #7d7174);
+    width: 50%; }
+  .index__main .index__dondeestamos--section p, .dondeestamos__main .dondeestamos__ubicacion--section p {
+    grid-area: parrafo;
+    width: 60%;
+    font-size: 1.8rem;
+    text-align: right; }
+  .index__main .index__dondeestamos--section a, .dondeestamos__main .dondeestamos__ubicacion--section a {
+    grid-area: link;
+    background-color: #2a4b84;
+    color: #f0f5f4;
+    width: 40%;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.6rem;
+    border-radius: 0.6rem; }
+    .index__main .index__dondeestamos--section a:hover, .dondeestamos__main .dondeestamos__ubicacion--section a:hover {
+      box-shadow: 5px 5px 5px #c3415e;
+      transform: scale(1.1); }
+
+.contacto__main .contacto__instagram--section, .contacto__main .contacto__facebook--section, .contacto__main .contacto__whatsapp--section {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 3rem;
+  gap: 5rem; }
+  .contacto__main .contacto__instagram--section div, .contacto__main .contacto__facebook--section div, .contacto__main .contacto__whatsapp--section div {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.8rem;
+    background-color: #f0f5f4;
+    border-radius: 0.8rem;
+    gap: 2rem; }
+    .contacto__main .contacto__instagram--section div:hover, .contacto__main .contacto__facebook--section div:hover, .contacto__main .contacto__whatsapp--section div:hover {
+      box-shadow: 5px 5px 5px #c3415e;
+      transform: scale(1.1); }
+    .contacto__main .contacto__instagram--section div a, .contacto__main .contacto__facebook--section div a, .contacto__main .contacto__whatsapp--section div a {
+      color: #2a4b84;
+      font-weight: bold;
+      font-size: 1.8rem;
+      text-decoration: none; }
+
+/* estilos del header */
+body {
+  /* ------------- estilos del logo ---------------- */
+  background-color: #2a4b84; }
+  body header {
+    /* -------- estilos del nav de boostrap ----- */ }
+    body header .header__logo {
+      margin: 0.8rem; }
+      body header .header__logo img {
+        background-color: #f0f5f4;
+        height: 4rem;
+        border-radius: 50%;
+        padding: 0.3rem; }
+    body header nav div .navbar-toggler {
+      background-color: #f0f5f4; }
+    body header nav div .navbarbr__div {
+      display: flex;
+      justify-content: center;
+      justify-content: space-around; }
+      body header nav div .navbarbr__div .navbt__div a {
+        background-color: #f0f5f4;
+        color: #2a4b84;
+        text-align: center;
+        margin: 0.8rem;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        font-size: 1.2rem;
+        font-weight: bold; }
+        body header nav div .navbarbr__div .navbt__div a:hover {
+          box-shadow: 5px 5px 5px #c3415e;
+          transform: scale(1.1); }
+    @media screen and (max-width: 768px) {
+      body header {
+        /* estilos del logo */ }
+        body header .header__logo img {
+          height: 3rem;
+          border-radius: 50%;
+          padding: 0.3rem; }
+        body header nav div .navbar-toggler .navbar-toggler-icon {
+          height: 1.5rem;
+          width: 1.5rem; }
+        body header nav div .navbarbr__div {
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          body header nav div .navbarbr__div .navbt__div a {
+            margin: 0.5rem;
+            padding: 0.3rem;
+            border-radius: 1rem;
+            font-size: 1rem;
+            font-weight: bold; } }
+
+/* estilos del main de index */
+.index__main {
+  /* seccion presentacion */
+  /* seccion productos */
+  /* seccion donde estamos */
+  /* seccion nuestras redes */ }
+  .index__main .index__nuestrasredes--section {
+    color: #f0f5f4;
+    padding: 1.8rem; }
+    .index__main .index__nuestrasredes--section h2 {
+      text-align: center;
+      font-size: 2rem;
+      padding: 1rem;
+      font-weight: bold; }
+    .index__main .index__nuestrasredes--section .index__nuestrasredes--section--div {
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 1rem;
+      padding: 0.7rem;
+      font-size: 1.5rem; }
+      .index__main .index__nuestrasredes--section .index__nuestrasredes--section--div .index__nuestrasredes--section--div--article {
+        background-color: #f0f5f4;
+        border-radius: 0.8rem;
+        padding: 0.8rem; }
+        .index__main .index__nuestrasredes--section .index__nuestrasredes--section--div .index__nuestrasredes--section--div--article:hover {
+          box-shadow: 5px 5px 5px #c3415e;
+          transform: scale(1.1); }
+        .index__main .index__nuestrasredes--section .index__nuestrasredes--section--div .index__nuestrasredes--section--div--article a {
+          color: #2a4b84;
+          font-weight: bold;
+          padding: 0.5rem;
+          text-decoration: none; }
+
+/* estilos pagina perros */
+.perros__main {
+  /*estilos seccion presentacion */
+  /* seccion productos */
+  /* perros cachorros */
+  /* productos perros adultos */ }
+  .perros__main .perros__presentacion--section .perros__presentacion--section--div p {
+    text-align: right; }
+
+/* estilos pagina gatos */
+.gatos__main {
+  /* estilos presentacion */
+  /* seccion productos */
+  /* gatos gatitos */
+  /* gatos adultos */ }
+  .gatos__main .gatos__presentacion--section .gatos__presentacion--section--div img {
+    width: 12%; }
+
+/* estilos pagina salud y bienestar */
+.salud__main {
+  /* estilos presentacion */
+  /* seccion productos */
+  /* seccion shampoos */
+  /* seccion pipetas */ }
+  .salud__main .salud__presentacion--section .salud__presentacion--section--div img {
+    width: 12%; }
+  .salud__main .salud__shampoos--section div article p {
+    height: 5rem; }
+  .salud__main .salud__pipetas--section div {
+    column-gap: 8rem; }
+    .salud__main .salud__pipetas--section div article p {
+      height: 8rem; }
+
+/* estilos pagina donde estamos */
+.dondeestamos__main {
+  /*estilos seccion presentacion */ }
+  .dondeestamos__main .dondeestamos__presentacion--section div img {
+    width: 18%; }
+  .dondeestamos__main .dondeestamos__ubicacion--section {
+    background-color: #2a4b84;
+    color: #f0f5f4; }
+    .dondeestamos__main .dondeestamos__ubicacion--section a {
+      background-color: #f0f5f4;
+      color: #2a4b84; }
+  .dondeestamos__main .dondeestamos__local--section {
+    background-color: #f0f5f4;
+    padding: 2rem; }
+    .dondeestamos__main .dondeestamos__local--section h2 {
+      color: #2a4b84;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold; }
+    .dondeestamos__main .dondeestamos__local--section .carousel .carousel-control-prev .carousel-control-prev-icon {
+      background-color: #2a4b84;
+      border-radius: 2rem; }
+    .dondeestamos__main .dondeestamos__local--section .carousel .carousel-control-next .carousel-control-next-icon {
+      background-color: #2a4b84;
+      border-radius: 2rem; }
+
+/* estilos pagina contacto */
+.contacto__main {
+  /*estilos seccion presentacion */ }
+  .contacto__main .contacto__presentacion--section .contacto__presentacion--section--div p {
+    text-align: left; }
+  .contacto__main .contacto__presentacion--section .contacto__presentacion--section--div img {
+    width: 20%; }
+  .contacto__main .contacto__facebook--section {
+    background-color: #f0f5f4; }
+    .contacto__main .contacto__facebook--section div {
+      background-color: #2a4b84; }
+      .contacto__main .contacto__facebook--section div a {
+        color: #f0f5f4; }
+
+/* estilos pagina sobre nosotros */
+.nosotros__main .nosotros__historia--section div p {
+  width: 35%;
+  font-size: 1.3rem;
+  text-align: left; }
+
+.nosotros__main .nosotros__historia--section div img {
+  width: 35%; }
+
+.nosotros__main .nosotros__motivacion--section {
+  color: #f0f5f4;
+  padding: 1.5rem; }
+  .nosotros__main .nosotros__motivacion--section h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: bold; }
+  .nosotros__main .nosotros__motivacion--section .nosotros__motivacion--section--div {
+    flex-wrap: wrap;
+    gap: 15%;
+    padding: 1.5rem; }
+    .nosotros__main .nosotros__motivacion--section .nosotros__motivacion--section--div p {
+      font-size: 1.3rem;
+      width: 35%;
+      text-align: right; }
+    .nosotros__main .nosotros__motivacion--section .nosotros__motivacion--section--div img {
+      width: 35%; }
+
+/* estilos del footer */
+footer {
+  padding: 1rem;
+  background-color: #3f3f3f; }
+  footer nav .footer__nav--ul {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem; }
+    footer nav .footer__nav--ul ul {
+      list-style: none;
+      padding: 1rem; }
+      footer nav .footer__nav--ul ul h4 a {
+        font-size: 1rem;
+        text-decoration: none;
+        color: #b5b5b5; }
+      footer nav .footer__nav--ul ul h4:hover {
+        transform: scale(1.1); }
+      footer nav .footer__nav--ul ul li a {
+        font-size: 1rem;
+        text-decoration: none;
+        color: #b5b5b5; }
+      footer nav .footer__nav--ul ul li:hover {
+        transform: scale(1.1); }
+  @media screen and (max-width: 768px) {
+    footer nav .footer__nav--ul {
+      gap: 0; } }
+  @media screen and (max-width: 425px) {
+    footer nav .footer__nav--ul {
+      flex-direction: column;
+      justify-content: left;
+      align-items: flex-start; }
+      footer nav .footer__nav--ul ul {
+        padding: 0; }
+        footer nav .footer__nav--ul ul h4 a {
+          font-size: 0.8rem; }
+        footer nav .footer__nav--ul ul li a {
+          font-size: 0.8rem; } }
+
+/* media q index tablet */
+@media screen and (max-width: 768px) {
+  /* estilos del main */
+  .index__main {
+    /*estilos de seccion productos */
+    /* seccion donde estamos */
+    /* seccion nuestras redes */ }
+    .index__main .index__presentacion--section h1 {
+      font-size: 1.6rem; }
+    .index__main .index__presentacion--section .index__presentacion--section--div {
+      gap: 15%; }
+      .index__main .index__presentacion--section .index__presentacion--section--div p {
+        font-size: 1.2rem;
+        text-align: left;
+        width: 40%; }
+      .index__main .index__presentacion--section .index__presentacion--section--div img {
+        width: 40%; }
+    .index__main .index__productos--section h2 {
+      font-size: 1.4rem; }
+    .index__main .index__productos--section .index__productos--section--div .index__productos--section--article h3 {
+      font-size: 1.3rem; }
+    .index__main .index__productos--section .index__productos--section--div .index__productos--section--article div {
+      width: 12rem;
+      height: 12rem; }
+    .index__main .index__productos--section .index__productos--section--div .index__productos--section--article a {
+      font-size: 1.3rem; }
+    .index__main .index__dondeestamos--section {
+      gap: 1.5rem; }
+      .index__main .index__dondeestamos--section img {
+        width: 18rem; }
+      .index__main .index__dondeestamos--section h2 {
+        font-size: 1.4rem; }
+      .index__main .index__dondeestamos--section p {
+        text-align: center;
+        width: 50%;
+        font-size: 1.2rem; }
+      .index__main .index__dondeestamos--section a {
+        font-size: 1rem; }
+    .index__main .index__nuestrasredes--section h2 {
+      font-size: 1.4rem; }
+    .index__main .index__nuestrasredes--section .index__nuestrasredes--section--div {
+      gap: 1.5rem; }
+      .index__main .index__nuestrasredes--section .index__nuestrasredes--section--div .index__nuestrasredes--section--div--article {
+        padding: 0.5rem; }
+        .index__main .index__nuestrasredes--section .index__nuestrasredes--section--div .index__nuestrasredes--section--div--article a {
+          font-size: 1rem; } }
+
+@media screen and (max-width: 425px) {
+  /* estilos del main */
+  .index__main {
+    /* seccion donde estamos */ }
+    .index__main .index__presentacion--section h1 {
+      font-size: 1.2rem; }
+    .index__main .index__presentacion--section .index__presentacion--section--div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .index__main .index__presentacion--section .index__presentacion--section--div p {
+        font-size: 1rem;
+        text-align: center;
+        width: 80%; }
+      .index__main .index__presentacion--section .index__presentacion--section--div img {
+        width: 80%; }
+    .index__main .index__dondeestamos--section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .index__main .index__dondeestamos--section img {
+        width: 80%; }
+      .index__main .index__dondeestamos--section p {
+        width: 80%; } }
+
+/* media q perros tablet */
+@media screen and (max-width: 768px) {
+  .perros__main {
+    /* estilos perros presentacion */
+    /* seccion perros productos */
+    /* seccion perros cachorros */
+    /* seccion perros adultos */ }
+    .perros__main .perros__presentacion--section h1 {
+      font-size: 1.6rem; }
+    .perros__main .perros__presentacion--section .perros__presentacion--section--div {
+      gap: 15%; }
+      .perros__main .perros__presentacion--section .perros__presentacion--section--div p {
+        font-size: 1.2rem;
+        text-align: right;
+        width: 40%; }
+      .perros__main .perros__presentacion--section .perros__presentacion--section--div img {
+        width: 40%; }
+    .perros__main .perros__productos--section h2 {
+      font-size: 1.4rem; }
+    .perros__main .perros__productos--section .perros__productos--section--div .productos__section--article h3 {
+      font-size: 1.4rem; }
+    .perros__main .perros__productos--section .perros__productos--section--div .productos__section--article div {
+      width: 15rem;
+      height: 15rem; }
+    .perros__main .perros__productos--section .perros__productos--section--div .productos__section--article a {
+      font-size: 1.3rem; }
+    .perros__main .perros__cachorros--section {
+      height: 124rem; }
+      .perros__main .perros__cachorros--section h2 {
+        font-size: 1.4rem; }
+      .perros__main .perros__cachorros--section .perros__cachorros--section--div {
+        gap: 5rem; }
+        .perros__main .perros__cachorros--section .perros__cachorros--section--div .perros__cachorros--section--div--article {
+          width: 25rem;
+          height: 35rem;
+          justify-content: flex-start; }
+          .perros__main .perros__cachorros--section .perros__cachorros--section--div .perros__cachorros--section--div--article h3 {
+            font-size: 1.3rem; }
+          .perros__main .perros__cachorros--section .perros__cachorros--section--div .perros__cachorros--section--div--article div {
+            width: 17rem;
+            height: 17rem; }
+          .perros__main .perros__cachorros--section .perros__cachorros--section--div .perros__cachorros--section--div--article p {
+            width: 22rem;
+            height: 20rem; }
+    .perros__main .perros__adultos--section {
+      height: 126rem; }
+      .perros__main .perros__adultos--section h2 {
+        font-size: 1.4rem; }
+      .perros__main .perros__adultos--section .perros__adultos--section--div {
+        gap: 5rem; }
+        .perros__main .perros__adultos--section .perros__adultos--section--div .perros__adultos--section--div--article {
+          width: 25rem;
+          height: 35rem;
+          justify-content: flex-start; }
+          .perros__main .perros__adultos--section .perros__adultos--section--div .perros__adultos--section--div--article h3 {
+            font-size: 1.3rem; }
+          .perros__main .perros__adultos--section .perros__adultos--section--div .perros__adultos--section--div--article div {
+            width: 17rem;
+            height: 17rem; }
+          .perros__main .perros__adultos--section .perros__adultos--section--div .perros__adultos--section--div--article p {
+            width: 22rem;
+            height: 20rem; } }
+
+@media screen and (max-width: 425px) {
+  /* estilos del main */
+  .perros__main .perros__presentacion--section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .perros__main .perros__presentacion--section h1 {
+      font-size: 1.2rem; }
+    .perros__main .perros__presentacion--section .perros__presentacion--section--div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem; }
+      .perros__main .perros__presentacion--section .perros__presentacion--section--div p {
+        font-size: 1rem;
+        text-align: center;
+        width: 80%; }
+      .perros__main .perros__presentacion--section .perros__presentacion--section--div img {
+        width: 80%; }
+  .perros__main .perros__productos--section h2 {
+    font-size: 1rem; }
+  .perros__main .perros__productos--section .perros__productos--section--div .productos__section--article h3 {
+    font-size: 1rem; }
+  .perros__main .perros__productos--section .perros__productos--section--div .productos__section--article div {
+    width: 12rem;
+    height: 12rem; }
+  .perros__main .perros__productos--section .perros__productos--section--div .productos__section--article a {
+    font-size: 1rem; }
+  .perros__main .perros__cachorros--section {
+    height: 122rem; }
+    .perros__main .perros__cachorros--section h2 {
+      font-size: 1rem; }
+    .perros__main .perros__cachorros--section .perros__cachorros--section--div {
+      gap: 4rem; }
+      .perros__main .perros__cachorros--section .perros__cachorros--section--div .perros__cachorros--section--div--article h3 {
+        font-size: 1rem; }
+      .perros__main .perros__cachorros--section .perros__cachorros--section--div .perros__cachorros--section--div--article div {
+        width: 12rem;
+        height: 12rem; }
+      .perros__main .perros__cachorros--section .perros__cachorros--section--div .perros__cachorros--section--div--article p {
+        font-size: 1rem;
+        width: 17rem;
+        height: 20rem; }
+  .perros__main .perros__adultos--section {
+    height: 122rem; }
+    .perros__main .perros__adultos--section h2 {
+      font-size: 1rem; }
+    .perros__main .perros__adultos--section .perros__adultos--section--div {
+      gap: 4rem; }
+      .perros__main .perros__adultos--section .perros__adultos--section--div .perros__adultos--section--div--article h3 {
+        font-size: 1rem; }
+      .perros__main .perros__adultos--section .perros__adultos--section--div .perros__adultos--section--div--article div {
+        width: 12rem;
+        height: 12rem; }
+      .perros__main .perros__adultos--section .perros__adultos--section--div .perros__adultos--section--div--article p {
+        font-size: 1rem;
+        width: 17rem;
+        height: 20rem; } }
+
+/* media q gatos tablet */
+@media screen and (max-width: 768px) {
+  .gatos__main {
+    /* estilos gatos presentacion */
+    /* seccion gatos productos */
+    /* seccion gatitos */
+    /* seccion gatos adultos */ }
+    .gatos__main .gatos__presentacion--section h1 {
+      font-size: 1.6rem; }
+    .gatos__main .gatos__presentacion--section .gatos__presentacion--section--div {
+      gap: 15%; }
+      .gatos__main .gatos__presentacion--section .gatos__presentacion--section--div p {
+        font-size: 1.2rem;
+        text-align: left;
+        width: 40%; }
+      .gatos__main .gatos__presentacion--section .gatos__presentacion--section--div img {
+        width: 20%; }
+    .gatos__main .gatos__productos--section h2 {
+      font-size: 1.4rem; }
+    .gatos__main .gatos__productos--section .gatos__productos--section--div .gatos__productos--section--div--article h3 {
+      font-size: 1.4rem; }
+    .gatos__main .gatos__productos--section .gatos__productos--section--div .gatos__productos--section--div--article div {
+      width: 15rem;
+      height: 15rem; }
+    .gatos__main .gatos__productos--section .gatos__productos--section--div .gatos__productos--section--div--article a {
+      font-size: 1.3rem; }
+    .gatos__main .gatos__gatitos--section {
+      height: 130rem; }
+      .gatos__main .gatos__gatitos--section h2 {
+        font-size: 1.4rem; }
+      .gatos__main .gatos__gatitos--section .gatos__gatitos--section--div {
+        gap: 5rem; }
+        .gatos__main .gatos__gatitos--section .gatos__gatitos--section--div .gatos__gatitos--section--div--article h3 {
+          font-size: 1.3rem; }
+        .gatos__main .gatos__gatitos--section .gatos__gatitos--section--div .gatos__gatitos--section--div--article div {
+          width: 17rem;
+          height: 17rem; }
+        .gatos__main .gatos__gatitos--section .gatos__gatitos--section--div .gatos__gatitos--section--div--article p {
+          width: 22rem;
+          height: 14rem; }
+    .gatos__main .gatos__adultos--section {
+      height: 130rem; }
+      .gatos__main .gatos__adultos--section h2 {
+        font-size: 1.4rem; }
+      .gatos__main .gatos__adultos--section .gatos__adultos--section--div {
+        gap: 5rem; }
+        .gatos__main .gatos__adultos--section .gatos__adultos--section--div .gatos__adultos--section--div--article h3 {
+          font-size: 1.3rem; }
+        .gatos__main .gatos__adultos--section .gatos__adultos--section--div .gatos__adultos--section--div--article div {
+          width: 17rem;
+          height: 17rem; }
+        .gatos__main .gatos__adultos--section .gatos__adultos--section--div .gatos__adultos--section--div--article p {
+          width: 22rem;
+          height: 14rem; } }
+
+/* media queris mobile gatos */
+@media screen and (max-width: 425px) {
+  /* estilos del main */
+  .gatos__main .gatos__presentacion--section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .gatos__main .gatos__presentacion--section h1 {
+      font-size: 1.2rem; }
+    .gatos__main .gatos__presentacion--section .gatos__presentacion--section--div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem; }
+      .gatos__main .gatos__presentacion--section .gatos__presentacion--section--div p {
+        font-size: 1rem;
+        text-align: center;
+        width: 80%; }
+      .gatos__main .gatos__presentacion--section .gatos__presentacion--section--div img {
+        width: 80%; }
+  .gatos__main .gatos__productos--section h2 {
+    font-size: 1rem; }
+  .gatos__main .gatos__productos--section .gatos__productos--section--div .gatos__productos-section--div--article h3 {
+    font-size: 1rem; }
+  .gatos__main .gatos__productos--section .gatos__productos--section--div .gatos__productos-section--div--article div {
+    width: 12rem;
+    height: 12rem; }
+  .gatos__main .gatos__productos--section .gatos__productos--section--div .gatos__productos-section--div--article a {
+    font-size: 1rem; }
+  .gatos__main .gatos__gatitos--section {
+    height: 120rem; }
+    .gatos__main .gatos__gatitos--section h2 {
+      font-size: 1rem; }
+    .gatos__main .gatos__gatitos--section .gatos__gatitos--section--div {
+      gap: 3rem; }
+      .gatos__main .gatos__gatitos--section .gatos__gatitos--section--div .gatos__gatitos--section--div--article h3 {
+        font-size: 1rem; }
+      .gatos__main .gatos__gatitos--section .gatos__gatitos--section--div .gatos__gatitos--section--div--article div {
+        width: 12rem;
+        height: 12rem; }
+      .gatos__main .gatos__gatitos--section .gatos__gatitos--section--div .gatos__gatitos--section--div--article p {
+        font-size: 1rem;
+        width: 17rem;
+        height: 17rem; }
+  .gatos__main .gatos__adultos--section {
+    height: 120rem; }
+    .gatos__main .gatos__adultos--section h2 {
+      font-size: 1rem; }
+    .gatos__main .gatos__adultos--section .gatos__adultos--section--div {
+      gap: 3rem; }
+      .gatos__main .gatos__adultos--section .gatos__adultos--section--div .gatos__adultos--section--div--article h3 {
+        font-size: 1rem; }
+      .gatos__main .gatos__adultos--section .gatos__adultos--section--div .gatos__adultos--section--div--article div {
+        width: 12rem;
+        height: 12rem; }
+      .gatos__main .gatos__adultos--section .gatos__adultos--section--div .gatos__adultos--section--div--article p {
+        font-size: 1rem;
+        width: 17rem;
+        height: 17rem; } }
+
+/* media queri  tablet salud y bienestar */
+@media screen and (max-width: 768px) {
+  .salud__main {
+    /* estilos salud y bienestar presentacion */
+    /* seccion salud y bienestar productos */
+    /* seccion shampoos */
+    /* seccion pipetas */ }
+    .salud__main .salud__presentacion--section h1 {
+      font-size: 1.6rem; }
+    .salud__main .salud__presentacion--section .salud__presentacion--section--div {
+      gap: 15%; }
+      .salud__main .salud__presentacion--section .salud__presentacion--section--div p {
+        font-size: 1.2rem;
+        text-align: right;
+        width: 40%; }
+      .salud__main .salud__presentacion--section .salud__presentacion--section--div img {
+        width: 20%; }
+    .salud__main .salud__productos--section h2 {
+      font-size: 1.4rem; }
+    .salud__main .salud__productos--section .salud__productos--section--div .salud__productos--section--div--article h3 {
+      font-size: 1.4rem; }
+    .salud__main .salud__productos--section .salud__productos--section--div .salud__productos--section--div--article div {
+      width: 15rem;
+      height: 15rem; }
+    .salud__main .salud__productos--section .salud__productos--section--div .salud__productos--section--div--article a {
+      font-size: 1.3rem; }
+    .salud__main .salud__shampoos--section {
+      height: 100rem; }
+      .salud__main .salud__shampoos--section h2 {
+        font-size: 1.4rem; }
+      .salud__main .salud__shampoos--section .salud__shampoos--section--div {
+        gap: 3rem; }
+        .salud__main .salud__shampoos--section .salud__shampoos--section--div .salud__shampoos--section--div--article h3 {
+          font-size: 1.3rem; }
+        .salud__main .salud__shampoos--section .salud__shampoos--section--div .salud__shampoos--section--div--article div {
+          width: 17rem;
+          height: 17rem; }
+        .salud__main .salud__shampoos--section .salud__shampoos--section--div .salud__shampoos--section--div--article p {
+          width: 27rem;
+          height: 5rem; }
+    .salud__main .salud__pipetas--section {
+      height: 215rem; }
+      .salud__main .salud__pipetas--section h2 {
+        font-size: 1.4rem; }
+      .salud__main .salud__pipetas--section .salud__pipetas--section--div {
+        gap: 4rem; }
+        .salud__main .salud__pipetas--section .salud__pipetas--section--div .salud__pipetas--section--div--article h3 {
+          font-size: 1.3rem; }
+        .salud__main .salud__pipetas--section .salud__pipetas--section--div .salud__pipetas--section--div--article div {
+          width: 17rem;
+          height: 17rem; }
+        .salud__main .salud__pipetas--section .salud__pipetas--section--div .salud__pipetas--section--div--article p {
+          width: 27rem;
+          height: 8rem; } }
+
+@media screen and (max-width: 425px) {
+  /* estilos del main */
+  .salud__main {
+    /* salud productos */
+    /* -------- salud shampoos --------------*/
+    /* --------------- salud pipetas -------------- */ }
+    .salud__main .salud__presentacion--section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .salud__main .salud__presentacion--section h1 {
+        font-size: 1.2rem; }
+      .salud__main .salud__presentacion--section .salud__presentacion--section--div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem; }
+        .salud__main .salud__presentacion--section .salud__presentacion--section--div p {
+          font-size: 1rem;
+          text-align: center;
+          width: 80%; }
+        .salud__main .salud__presentacion--section .salud__presentacion--section--div img {
+          width: 80%; }
+    .salud__main .salud__productos--section h2 {
+      font-size: 1rem; }
+    .salud__main .salud__productos--section .salud__productos--section--div .salud__productos--section--div--article h3 {
+      font-size: 1rem; }
+    .salud__main .salud__productos--section .salud__productos--section--div .salud__productos--section--div--article div {
+      width: 12rem;
+      height: 12rem; }
+    .salud__main .salud__productos--section .salud__productos--section--div .salud__productos--section--div--article a {
+      font-size: 1rem; }
+    .salud__main .salud__shampoos--section {
+      height: 95rem; }
+      .salud__main .salud__shampoos--section h2 {
+        font-size: 1rem; }
+      .salud__main .salud__shampoos--section .salud__shampoos--section--div {
+        gap: 4rem; }
+        .salud__main .salud__shampoos--section .salud__shampoos--section--div .salud__shampoos--section--div--article h3 {
+          font-size: 1rem; }
+        .salud__main .salud__shampoos--section .salud__shampoos--section--div .salud__shampoos--section--div--article div {
+          width: 12rem;
+          height: 12rem; }
+        .salud__main .salud__shampoos--section .salud__shampoos--section--div .salud__shampoos--section--div--article p {
+          font-size: 1rem;
+          width: 17rem;
+          height: 8rem; }
+    .salud__main .salud__pipetas--section {
+      height: 205rem; }
+      .salud__main .salud__pipetas--section h2 {
+        font-size: 1rem; }
+      .salud__main .salud__pipetas--section .salud__pipetas--section--div {
+        gap: 4rem; }
+        .salud__main .salud__pipetas--section .salud__pipetas--section--div .salud__pipetas--section--div--article h3 {
+          font-size: 1rem; }
+        .salud__main .salud__pipetas--section .salud__pipetas--section--div .salud__pipetas--section--div--article div {
+          width: 12rem;
+          height: 12rem; }
+        .salud__main .salud__pipetas--section .salud__pipetas--section--div .salud__pipetas--section--div--article p {
+          font-size: 1rem;
+          width: 17rem;
+          height: 12rem; } }
+
+/* media queri tablet donde estamos */
+@media screen and (max-width: 768px) {
+  .dondeestamos__main .dondeestamos__presentacion--section h1 {
+    font-size: 1.6rem; }
+  .dondeestamos__main .dondeestamos__presentacion--section .dondeestamos__presentacion--section--div {
+    gap: 15%; }
+    .dondeestamos__main .dondeestamos__presentacion--section .dondeestamos__presentacion--section--div p {
+      font-size: 1.2rem;
+      text-align: left;
+      width: 30%; }
+    .dondeestamos__main .dondeestamos__presentacion--section .dondeestamos__presentacion--section--div img {
+      width: 30%; }
+  .dondeestamos__main .dondeestamos__ubicacion--section {
+    gap: 1.5rem; }
+    .dondeestamos__main .dondeestamos__ubicacion--section img {
+      width: 90%; }
+    .dondeestamos__main .dondeestamos__ubicacion--section h2 {
+      font-size: 1.4rem; }
+    .dondeestamos__main .dondeestamos__ubicacion--section p {
+      text-align: center;
+      width: 70%;
+      font-size: 1.2rem; }
+    .dondeestamos__main .dondeestamos__ubicacion--section a {
+      font-size: 1rem;
+      width: 15rem; }
+  .dondeestamos__main .dondeestamos__local--section h2 {
+    font-size: 1.4rem; } }
+
+/* media queris mobile donde estamos */
+@media screen and (max-width: 425px) {
+  .dondeestamos__main .dondeestamos__presentacion--section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .dondeestamos__main .dondeestamos__presentacion--section h1 {
+      font-size: 1.2rem; }
+    .dondeestamos__main .dondeestamos__presentacion--section .dondeestamos__presentacion--section--div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem; }
+      .dondeestamos__main .dondeestamos__presentacion--section .dondeestamos__presentacion--section--div p {
+        font-size: 1rem;
+        text-align: center;
+        width: 80%; }
+      .dondeestamos__main .dondeestamos__presentacion--section .dondeestamos__presentacion--section--div img {
+        width: 80%; }
+  .dondeestamos__main .dondeestamos__ubicacion--section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .dondeestamos__main .dondeestamos__ubicacion--section img {
+      width: 80%; }
+    .dondeestamos__main .dondeestamos__ubicacion--section p {
+      width: 80%; }
+  .dondeestamos__main .dondeestamos__local--section .carousel .carousel-inner img {
+    width: 100%; } }
+
+/* media queri tablet pagina contacto */
+@media screen and (max-width: 768px) {
+  .contacto__main .contacto__presentacion--section h1 {
+    font-size: 1.6rem; }
+  .contacto__main .contacto__presentacion--section .contacto__presentacion--section--div {
+    gap: 15%; }
+    .contacto__main .contacto__presentacion--section .contacto__presentacion--section--div p {
+      font-size: 1.2rem; }
+    .contacto__main .contacto__presentacion--section .contacto__presentacion--section--div img {
+      width: 30%; } }
+
+/* media queri mobile pagina contacto */
+@media screen and (max-width: 425px) {
+  .contacto__main .contacto__presentacion--section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .contacto__main .contacto__presentacion--section h1 {
+      font-size: 1.2rem; }
+    .contacto__main .contacto__presentacion--section .contacto__presentacion--section--div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem; }
+      .contacto__main .contacto__presentacion--section .contacto__presentacion--section--div p {
+        font-size: 1rem;
+        text-align: center;
+        width: 80%; }
+      .contacto__main .contacto__presentacion--section .contacto__presentacion--section--div img {
+        width: 60%; }
+  .contacto__main .contacto__instagram--section img {
+    width: 80%; }
+  .contacto__main .contacto__instagram--section div img {
+    width: 20%; }
+  .contacto__main .contacto__instagram--section div a {
+    font-size: 1rem; }
+  .contacto__main .contacto__facebook--section div img {
+    width: 20%; }
+  .contacto__main .contacto__facebook--section div a {
+    font-size: 1rem; }
+  .contacto__main .contacto__facebook--section img {
+    width: 80%; }
+  .contacto__main .contacto__whatsapp--section img {
+    width: 80%; }
+  .contacto__main .contacto__whatsapp--section div img {
+    width: 20%; }
+  .contacto__main .contacto__whatsapp--section div a {
+    font-size: 1rem; } }
+
+/* media queri tablet sobre nosotros */
+@media screen and (max-width: 768px) {
+  .nosotros__main .nosotros__historia--section h1 {
+    font-size: 1.6rem; }
+  .nosotros__main .nosotros__historia--section .nosotros__historia--section--div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; }
+    .nosotros__main .nosotros__historia--section .nosotros__historia--section--div p {
+      width: 80%;
+      text-align: center;
+      font-size: 1.2rem; }
+    .nosotros__main .nosotros__historia--section .nosotros__historia--section--div img {
+      width: 80%; }
+  .nosotros__main .nosotros__motivacion--section h2 {
+    font-size: 1.6rem; }
+  .nosotros__main .nosotros__motivacion--section .nosotros__motivacion--section--div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; }
+    .nosotros__main .nosotros__motivacion--section .nosotros__motivacion--section--div img {
+      width: 80%; }
+    .nosotros__main .nosotros__motivacion--section .nosotros__motivacion--section--div p {
+      width: 80%;
+      text-align: center;
+      font-size: 1.2rem; } }
+
+/* media queris mobile sobre nosotros */
+@media screen and (max-width: 425px) {
+  .nosotros__main .nosotros__historia--section {
+    padding: 0; }
+    .nosotros__main .nosotros__historia--section h1 {
+      font-size: 1rem; }
+    .nosotros__main .nosotros__historia--section .nosotros__historia--section--div p {
+      font-size: 1rem; }
+  .nosotros__main .nosotros__motivacion--section {
+    padding: 0; }
+    .nosotros__main .nosotros__motivacion--section h2 {
+      font-size: 1rem; }
+    .nosotros__main .nosotros__motivacion--section .nosotros__motivacion--section--div p {
+      font-size: 1rem; } }

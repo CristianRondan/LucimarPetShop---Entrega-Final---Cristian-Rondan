@@ -1,0 +1,51 @@
+/* estilos del main de index */
+
+.index__main{
+    /* seccion presentacion */
+    .index__presentacion--section{
+        @extend %estilos-seccion-presentacion;
+    }
+    /* seccion productos */
+    .index__productos--section{
+        @extend %estilos-seccion-productos;
+    }
+    /* seccion donde estamos */
+    .index__dondeestamos--section{
+        @extend %estilos-seccion-dondeestamos-link;
+    }
+    /* seccion nuestras redes */
+    .index__nuestrasredes--section{
+        color: $color-secundario;
+        padding: 1.8rem;
+        h2{
+            text-align: center;
+            font-size: 2rem;
+            padding: 1rem;
+            font-weight: bold;
+            }
+        .index__nuestrasredes--section--div{
+            @extend %flexRowCenter;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 1rem;
+            padding: 0.7rem;
+            font-size: 1.5rem;
+            .index__nuestrasredes--section--div--article{
+                @extend %flexRowCenter;
+                background-color: $color-secundario;
+                border-radius: 0.8rem;
+                padding: 0.8rem;
+                &:hover{
+                    box-shadow: 5px 5px 5px $color-bg-principal;
+                    transform: scale(1.1);
+                }
+                a{
+                    color: $color-principal;
+                    font-weight: bold;
+                    padding: 0.5rem;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

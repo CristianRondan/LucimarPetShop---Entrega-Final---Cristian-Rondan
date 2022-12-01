@@ -1,0 +1,43 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+// imports hojas secundarias //
+
+@import "utilidades/variables";
+@import "utilidades/mixin";
+@import "utilidades/extend";
+
+
+
+// paginas html //
+
+@import "paginas/header";
+
+@import "paginas/index";
+@import "paginas/perros";
+@import "paginas/gatos";
+@import "paginas/saludybienestar";
+@import "paginas/dondeestamos";
+@import "paginas/contacto";
+@import "paginas/sobrenosotros";
+
+@import "paginas/footer";
+
+
+// media queris //
+
+@import "media-q/indexmq";
+@import "media-q/perrosmq";
+@import "media-q/gatosmq";
+@import "media-q/saludmq";
+@import "media-q/dondeestamosmq";
+@import "media-q/contactomq";
+@import "media-q/sobrenosotrosmq";
+
+

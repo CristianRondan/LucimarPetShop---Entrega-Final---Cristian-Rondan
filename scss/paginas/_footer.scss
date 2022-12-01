@@ -1,0 +1,64 @@
+/* estilos del footer */
+
+footer{
+    padding: 1rem;
+    background-color: $color-fondo-footer;
+    nav{
+        .footer__nav--ul{
+            display: flex;
+            justify-content: space-between;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 5rem;
+            ul{
+                list-style: none;
+                padding: 1rem;
+                h4{
+                    a{
+                        font-size: 1rem;
+                        text-decoration: none;
+                        color: $color-texto-footer;    
+                    }
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+                li{
+                    a{
+                        font-size: 1rem;
+                        text-decoration: none;
+                        color: $color-texto-footer;                        
+                    }
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+                }
+            }
+    @media screen and (max-width:768px) {
+        .footer__nav--ul{
+            gap: 0;
+        }
+    }
+    @media screen and (max-width:425px) {
+        .footer__nav--ul{
+            flex-direction: column;
+            justify-content: left;
+            align-items: flex-start;
+            ul{
+                padding: 0;
+                h4{
+                    a{
+                        font-size: 0.8rem;
+                    }
+                }
+                li{
+                    a{
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+    }
+}

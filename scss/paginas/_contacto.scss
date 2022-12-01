@@ -1,0 +1,32 @@
+/* estilos pagina contacto */
+
+.contacto__main{
+    /*estilos seccion presentacion */
+    .contacto__presentacion--section{
+        @extend %estilos-seccion-presentacion;
+        .contacto__presentacion--section--div{
+            p{
+                text-align: left;
+            }
+            img{
+                width: 20%;
+            }
+        }
+    }
+    .contacto__instagram--section{
+        @extend %estilos-contacto-redes;
+    }
+    .contacto__facebook--section{
+        @extend %estilos-contacto-redes;
+        background-color: $color-secundario;
+        div{
+            background-color: $color-principal;
+            a{
+                color: $color-secundario;
+            }
+        }
+    }
+    .contacto__whatsapp--section{
+        @extend %estilos-contacto-redes;
+    }
+}

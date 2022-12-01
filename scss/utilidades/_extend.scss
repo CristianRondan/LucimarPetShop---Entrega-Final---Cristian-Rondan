@@ -1,0 +1,279 @@
+// crear extend (repetir lineas de codigos) para las secciones donde se repite codigo //
+
+%flexRowCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flexColCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// estilos de seccion presentacion //
+
+%estilos-seccion-presentacion{
+    color: $color-principal;
+    background-color: $color-secundario;
+    padding: 1.5rem;
+    h1{
+        font-size: 2.5rem;
+        text-align: center;
+        font-weight: bold;
+        padding: 1rem;    
+    }
+    div{
+        @extend %flexRowCenter;
+        flex-wrap: wrap;
+        gap: 15%;
+        padding: 1rem;
+        p{
+            font-size: 1.8rem;
+            width: 30%;        
+        }
+        img{
+            width: 30%;
+        }
+    }
+}
+
+// estilos segunda seccion"etapas de vida" //
+
+%estilos-seccion-productos{
+    color: $color-secundario;
+    padding: 1.5rem;
+    h2{
+        text-align: center;
+        font-size: 2rem;
+        padding: 1rem;
+        font-weight: bold;
+        }
+    div{
+        @extend %flexRowCenter;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 1rem;
+        article{
+            @extend %flexColCenter;
+            padding: 1rem;
+            h3{
+                font-size: 1.8rem;
+                padding: 1rem;
+                }
+            div{
+                @extend %flexRowCenter;
+                background-color: $color-bg-principal;
+                border-radius: 15%;
+                height: 20rem;
+                width: 20rem;
+                box-shadow: 2px 2px 5px #152e58;
+                img{
+                    height: 90%;
+                    padding: 0.2rem;
+                    filter: drop-shadow(2px 2px 5px #791a2f);
+                    }
+            }
+            a{
+                font-size: 1.8rem;
+                background-color: $color-secundario;
+                color: $color-principal;
+                margin: 1.5rem;
+                padding: 0.5rem;
+                border-radius: 0.6rem;
+                font-weight: bold;
+                text-decoration: none;
+                &:hover{
+                    box-shadow: 5px 5px 5px $color-bg-principal;
+                    transform: scale(1.1);                    
+                }
+            }
+        }
+    }
+}
+
+// estilos productos para cachorros, gatitos, shampoos //
+
+%estilos-productos-primer-bloque{
+    color: $color-secundario;
+    background-color: $color-secundario;
+    padding: 1.5rem;
+    h2{
+        color: $color-principal;
+        text-align: center;
+        font-size: 2rem;
+        padding: 1rem;
+        font-weight: bold;
+    }
+    div{
+        @extend %flexRowCenter;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 2rem;
+        text-align: center;
+        padding: 1rem;
+        article{
+            background-color: $color-principal;
+            border-radius: 2rem;
+            @extend %flexColCenter;
+            h3{
+                font-size: 1.8rem;
+                padding: 1rem;
+            }
+            div{
+                @extend %flexRowCenter;
+                background-color: $color-bg-secundario;
+                border-radius: 10%;
+                height: 20rem;
+                width: 20rem;
+                box-shadow: 2px 2px 5px #152e58;
+            img{
+                height: 90%;
+                padding: 0.2rem;
+                filter: drop-shadow(2px 2px 5px #7d7174);
+                }
+            }
+            p{
+                font-size: 1rem;
+                padding: 1.8rem;
+                height: 12rem;
+                width: 23rem;
+            }
+        }
+    }
+}
+
+// estilos productos para adultos, gatos adultos, pipetas //
+
+%estilos-productos-segundo-bloque{
+    color: $color-principal;
+    padding: 1.8rem;
+    h2{
+        color: $color-secundario;
+        text-align: center;
+        font-size: 2rem;
+        padding: 1rem;
+        font-weight: bold;
+    }
+    div{
+        @extend %flexRowCenter;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-evenly;
+        gap: 2rem;
+        padding: 1rem;
+        article{
+            background-color: $color-secundario;
+            border-radius: 2rem;
+            @extend %flexColCenter;
+            h3{
+                font-size: 1.8rem;
+                padding: 1rem;
+            }
+            div{
+                background-color: $color-bg-principal;
+                border-radius: 15%;
+                height: 20rem;
+                width: 20rem;
+                box-shadow: 2px 2px 5px #7d7174;
+                @extend %flexRowCenter;
+                img{
+                    height: 90%;
+                    padding: 0.2rem;
+                    filter: drop-shadow(2px 2px 5px #791a2f);
+                }
+            }
+            p{
+                font-size: 1rem;
+                padding: 1.8rem;
+                height: 12rem;
+                width: 23rem;
+            }
+        }
+    }
+}
+
+
+// estilos seccion donde estamos (redireccionamiento a google maps //
+
+%estilos-seccion-dondeestamos-link{
+    color: $color-principal;
+    background-color: $color-secundario;
+    padding: 1.8rem;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "titulo titulo"
+        "img parrafo"
+        "img link";
+    justify-items: center;
+    align-items: center;
+    h2{
+        grid-area: titulo;
+        text-align: center;
+        font-size: 2rem;
+        padding: 1rem;
+        font-weight: bold;
+        }
+    img{
+        grid-area: img;
+        filter: drop-shadow(2px 2px 5px #7d7174);
+        width: 50%;
+    }
+    p{
+        grid-area: parrafo;
+        width: 60%;
+        font-size: 1.8rem;
+        text-align: right;        
+    }
+    a{
+        grid-area: link;
+        background-color: $color-principal;
+        color: $color-secundario;
+        width: 40%;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 0.6rem;
+        border-radius: 0.6rem;
+        &:hover{
+            box-shadow: 5px 5px 5px #c3415e;
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+// estilos pagina contacto (secciones redes) //
+
+%estilos-contacto-redes{
+    @extend %flexRowCenter;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 3rem;
+    gap: 5rem;
+    div{
+        @extend %flexRowCenter;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0.8rem;
+        background-color: $color-secundario;
+        border-radius: 0.8rem;
+        gap: 2rem;
+        &:hover{
+            box-shadow: 5px 5px 5px $color-bg-principal;
+            transform: scale(1.1);
+        }    
+        a{
+            color: $color-principal;
+            font-weight: bold;
+            font-size: 1.8rem;
+            text-decoration: none;
+        }
+    }
+}

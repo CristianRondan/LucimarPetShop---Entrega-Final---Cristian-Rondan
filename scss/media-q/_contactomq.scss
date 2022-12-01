@@ -1,0 +1,84 @@
+/* media queri tablet pagina contacto */
+
+@media screen and (max-width:768px) {
+    .contacto__main{
+        .contacto__presentacion--section{
+            h1{
+                font-size: 1.6rem;
+            }
+            .contacto__presentacion--section--div{
+                gap: 15%;
+                p{
+                    font-size: 1.2rem;
+                }
+                img{
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
+
+/* media queri mobile pagina contacto */
+
+@media screen and (max-width:425px) {
+    .contacto__main{
+        .contacto__presentacion--section{
+            @include flex-col-center;
+            h1{
+                font-size: 1.2rem;
+            }
+            .contacto__presentacion--section--div{
+                @include flex-col-center;
+                gap: 1rem;
+                p{
+                    font-size: 1rem;
+                    text-align: center;
+                    width: 80%;
+                }
+                img{
+                    width: 60%;
+                }
+            }
+        }
+        .contacto__instagram--section{
+            img{
+                width: 80%;
+            }
+            div{
+                img{
+                    width: 20%;
+                }
+                a{
+                    font-size: 1rem;
+                }
+            }
+        }
+        .contacto__facebook--section{
+            div{
+                img{
+                    width: 20%;
+                }
+                a{
+                    font-size: 1rem;
+                }
+            }
+            img{
+                width: 80%;
+            }
+        }    
+        .contacto__whatsapp--section{
+            img{
+                width: 80%;
+            }
+            div{
+                img{
+                    width: 20%;
+                }
+                a{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

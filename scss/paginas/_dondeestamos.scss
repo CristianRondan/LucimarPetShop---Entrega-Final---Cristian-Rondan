@@ -1,0 +1,46 @@
+/* estilos pagina donde estamos */
+
+.dondeestamos__main{
+    /*estilos seccion presentacion */
+    .dondeestamos__presentacion--section{
+        @extend %estilos-seccion-presentacion;
+        div{
+            img{
+                width: 18%;
+            }
+        }
+    }
+    .dondeestamos__ubicacion--section{
+        @extend %estilos-seccion-dondeestamos-link;
+        background-color: $color-principal;
+        color: $color-secundario;
+        a{
+            background-color: $color-secundario;
+            color: $color-principal;
+        }
+    }
+    .dondeestamos__local--section{
+        background-color: $color-secundario;
+        padding: 2rem;
+        h2{
+            color: $color-principal;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .carousel{
+            .carousel-control-prev{
+                .carousel-control-prev-icon{
+                    background-color: $color-principal;
+                    border-radius: 2rem;
+                }
+            }
+            .carousel-control-next{
+                .carousel-control-next-icon{
+                    background-color: $color-principal;
+                    border-radius: 2rem;
+                }
+            }
+        }
+    }
+}

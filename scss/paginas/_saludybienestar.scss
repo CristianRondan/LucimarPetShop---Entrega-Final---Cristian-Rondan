@@ -1,0 +1,40 @@
+/* estilos pagina salud y bienestar */
+
+.salud__main{
+    /* estilos presentacion */
+    .salud__presentacion--section{
+        @extend %estilos-seccion-presentacion;
+        .salud__presentacion--section--div{
+            img{
+                width: 12%;
+            }
+        }
+    }
+    /* seccion productos */
+    .salud__productos--section{
+        @extend %estilos-seccion-productos;
+    }
+    /* seccion shampoos */
+    .salud__shampoos--section{
+        @extend %estilos-productos-primer-bloque;
+        div{
+            article{
+                p{
+                    height: 5rem;
+                }
+            }
+        }
+    }
+    /* seccion pipetas */
+    .salud__pipetas--section{
+        @extend %estilos-productos-segundo-bloque;
+        div{
+            column-gap: 8rem;
+            article{
+                p{
+                    height: 8rem;
+                }
+            }
+        }
+    }
+}

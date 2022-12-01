@@ -1,0 +1,171 @@
+/* media queri  tablet salud y bienestar */
+
+@media screen and (max-width:768px) {
+    .salud__main{
+        /* estilos salud y bienestar presentacion */
+        .salud__presentacion--section{
+            h1{
+                font-size: 1.6rem;
+            }
+            .salud__presentacion--section--div{
+                gap: 15%;
+                p{
+                    font-size: 1.2rem;
+                    text-align: right;
+                    width: 40%;
+                }
+                img{
+                    width: 20%;
+                }
+            }
+        }
+        /* seccion salud y bienestar productos */
+        .salud__productos--section{
+            h2{
+                font-size: 1.4rem;
+            }
+            .salud__productos--section--div{
+                .salud__productos--section--div--article{
+                    h3{
+                        font-size: 1.4rem;
+                    }
+                    div{
+                        @include medidas(15rem, 15rem);
+                    }
+                    a{
+                        font-size: 1.3rem;
+                    }
+                }
+            } 
+        }
+        /* seccion shampoos */
+        .salud__shampoos--section{
+            height: 100rem;
+            h2{
+                font-size: 1.4rem;
+            }
+            .salud__shampoos--section--div{
+                gap: 3rem;
+                .salud__shampoos--section--div--article{
+                    h3{
+                        font-size: 1.3rem;
+                    }
+                    div{
+                        @include medidas(17rem, 17rem);
+                    }
+                    p{
+                        @include medidas(27rem, 5rem);
+                    }
+                }   
+            }
+        }
+        /* seccion pipetas */
+        .salud__pipetas--section{
+            height: 215rem;
+            h2{
+                font-size: 1.4rem;
+            }
+            .salud__pipetas--section--div{
+                gap: 4rem;
+                .salud__pipetas--section--div--article{
+                    h3{
+                        font-size: 1.3rem;
+                    }
+                    div{
+                        @include medidas(17rem, 17rem);
+                    }
+                    p{
+                        @include medidas(27rem, 8rem);
+                    }
+                }   
+            }
+        }
+    }
+}
+// ---------------------------------------- media queri mobile ------------------------ //
+@media screen and (max-width:425px) {
+    /* estilos del main */
+    .salud__main{
+        .salud__presentacion--section{
+            @include flex-col-center;
+            h1{
+                font-size: 1.2rem;
+            }
+            .salud__presentacion--section--div{
+                @include flex-col-center;
+                gap: 1rem;
+                p{
+                    font-size: 1rem;
+                    text-align: center;
+                    width: 80%;
+                }
+                img{
+                    width: 80%;
+                }
+            }
+        }
+        /* salud productos */
+        .salud__productos--section{
+            h2{
+                font-size: 1rem;
+            }
+            .salud__productos--section--div{
+                .salud__productos--section--div--article{
+                    h3{
+                        font-size: 1rem;
+                    }
+                    div{
+                        @include medidas(12rem, 12rem);
+                    }
+                    a{
+                        font-size: 1rem;
+                    }    
+                }
+            }
+        }
+        /* -------- salud shampoos --------------*/
+        .salud__shampoos--section{
+            height: 95rem;
+            h2{
+                font-size: 1rem;
+            }
+            .salud__shampoos--section--div{
+                gap: 4rem;
+                .salud__shampoos--section--div--article{
+                    h3{
+                        font-size: 1rem;
+                    }
+                    div{
+                        @include medidas(12rem, 12rem);
+                    }
+                    p{
+                        font-size: 1rem;
+                        @include medidas(17rem, 8rem);
+                    }
+                }
+            }
+        }
+        /* --------------- salud pipetas -------------- */
+        .salud__pipetas--section{
+            height: 205rem;
+            h2{
+                font-size: 1rem;
+            }
+            .salud__pipetas--section--div{
+                gap: 4rem;
+                .salud__pipetas--section--div--article{
+                    h3{
+                        font-size: 1rem;
+                    }
+                    div{
+                        @include medidas(12rem, 12rem);
+                    }
+                    p{
+                        font-size: 1rem;
+                        @include medidas(17rem, 12rem);
+                    }
+                }
+            }
+        }
+    }
+}

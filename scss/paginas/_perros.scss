@@ -1,0 +1,25 @@
+/* estilos pagina perros */
+
+.perros__main{
+    /*estilos seccion presentacion */
+    .perros__presentacion--section{
+        @extend %estilos-seccion-presentacion;
+        .perros__presentacion--section--div{
+            p{
+                text-align: right;
+            }
+        }
+    }
+    /* seccion productos */
+    .perros__productos--section{
+        @extend %estilos-seccion-productos;
+    }
+    /* perros cachorros */
+    .perros__cachorros--section{
+        @extend %estilos-productos-primer-bloque;
+    }
+    /* productos perros adultos */
+    .perros__adultos--section{
+        @extend %estilos-productos-segundo-bloque;
+    }
+}

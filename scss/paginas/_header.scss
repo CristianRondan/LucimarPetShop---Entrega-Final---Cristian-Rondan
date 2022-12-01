@@ -1,0 +1,82 @@
+/* estilos del header */
+
+body{
+    /* ------------- estilos del logo ---------------- */
+    background-color: $color-principal;
+    header{
+        .header__logo{
+            @extend %flexRowCenter;
+            margin: 0.8rem;
+            img{
+                background-color: $color-secundario;
+                height: 4rem;
+                border-radius: 50%;
+                padding: 0.3rem;
+                }
+        }
+        /* -------- estilos del nav de boostrap ----- */
+        nav{
+            div{
+                .navbar-toggler{
+                    background-color: $color-secundario;
+                }
+                .navbarbr__div{
+                    display: flex;
+                    justify-content: center;
+                    justify-content: space-around;
+                    .navbt__div{
+                        a{
+                            background-color: $color-secundario;
+                            color: $color-principal;
+                            text-align: center;
+                            margin: 0.8rem;
+                            padding: 0.5rem;
+                            border-radius: 1rem;
+                            font-size: 1.2rem;
+                            font-weight: bold;
+                            &:hover{
+                                box-shadow: 5px 5px 5px $color-bg-principal;
+                                transform: scale(1.1);        
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (max-width:768px) {
+            /* estilos del logo */
+            .header__logo{
+                img{
+                    height: 3rem;
+                    border-radius: 50%;
+                    padding: 0.3rem;
+                }
+            }
+            nav{
+                div{
+                    .navbar-toggler{
+                        .navbar-toggler-icon{
+                            height: 1.5rem;
+                            width: 1.5rem;
+                        }
+                    }
+                    .navbarbr__div{
+                        @include flex-row-center;
+                        .navbt__div{
+                            a{
+                                margin: 0.5rem;
+                                padding: 0.3rem;
+                                border-radius: 1rem;
+                                font-size: 1rem;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+

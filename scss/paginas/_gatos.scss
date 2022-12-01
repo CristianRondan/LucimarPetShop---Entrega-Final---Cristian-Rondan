@@ -1,0 +1,25 @@
+/* estilos pagina gatos */
+
+.gatos__main{
+    /* estilos presentacion */
+    .gatos__presentacion--section{
+        @extend %estilos-seccion-presentacion;
+        .gatos__presentacion--section--div{
+            img{
+                width: 12%;
+            }
+        }
+    }
+    /* seccion productos */
+    .gatos__productos--section{
+        @extend %estilos-seccion-productos;
+    }
+    /* gatos gatitos */
+    .gatos__gatitos--section{
+        @extend %estilos-productos-primer-bloque;
+    }
+    /* gatos adultos */
+    .gatos__adultos--section{
+        @extend %estilos-productos-segundo-bloque;
+    }
+}
