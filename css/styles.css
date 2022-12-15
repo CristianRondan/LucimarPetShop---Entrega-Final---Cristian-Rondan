@@ -70,9 +70,10 @@
     border-radius: 0.6rem;
     font-weight: bold;
     text-decoration: none; }
-    .perros__main .perros__productos--section .productos__article--uno a:hover, .gatos__main .gatos__productos--section .productos__article--uno a:hover, .salud__main .salud__productos--section .productos__article--uno a:hover, .perros__main .perros__productos--section .productos__article--dos a:hover, .gatos__main .gatos__productos--section .productos__article--dos a:hover, .salud__main .salud__productos--section .productos__article--dos a:hover, .index__main .index__productos--section .productos__article--uno a:hover, .index__main .index__productos--section .productos__article--dos a:hover, .index__main .index__productos--section .productos__article--tres a:hover {
-      box-shadow: 5px 5px 5px #c3415e;
-      transform: scale(1.1); }
+    @media (min-width: 770px) {
+      .perros__main .perros__productos--section .productos__article--uno a:hover, .gatos__main .gatos__productos--section .productos__article--uno a:hover, .salud__main .salud__productos--section .productos__article--uno a:hover, .perros__main .perros__productos--section .productos__article--dos a:hover, .gatos__main .gatos__productos--section .productos__article--dos a:hover, .salud__main .salud__productos--section .productos__article--dos a:hover, .index__main .index__productos--section .productos__article--uno a:hover, .index__main .index__productos--section .productos__article--dos a:hover, .index__main .index__productos--section .productos__article--tres a:hover {
+        box-shadow: 5px 5px 5px #c3415e;
+        transform: scale(1.1); } }
     .perros__main .perros__productos--section .productos__article--uno a:active, .gatos__main .gatos__productos--section .productos__article--uno a:active, .salud__main .salud__productos--section .productos__article--uno a:active, .perros__main .perros__productos--section .productos__article--dos a:active, .gatos__main .gatos__productos--section .productos__article--dos a:active, .salud__main .salud__productos--section .productos__article--dos a:active, .index__main .index__productos--section .productos__article--uno a:active, .index__main .index__productos--section .productos__article--dos a:active, .index__main .index__productos--section .productos__article--tres a:active {
       transform: scale(0.9);
       box-shadow: inset 5px 5px 5px #b1a1a5; }
@@ -212,9 +213,10 @@
     font-weight: bold;
     padding: 0.6rem;
     border-radius: 0.6rem; }
-    .index__main .index__dondeestamos--section a:hover, .dondeestamos__main .dondeestamos__ubicacion--section a:hover {
-      box-shadow: 5px 5px 5px #c3415e;
-      transform: scale(1.1); }
+    @media (min-width: 770px) {
+      .index__main .index__dondeestamos--section a:hover, .dondeestamos__main .dondeestamos__ubicacion--section a:hover {
+        box-shadow: 5px 5px 5px #c3415e;
+        transform: scale(1.1); } }
     .index__main .index__dondeestamos--section a:active, .dondeestamos__main .dondeestamos__ubicacion--section a:active {
       transform: scale(0.9);
       box-shadow: inset 5px 5px 5px #1a3461; }
@@ -224,9 +226,10 @@
   background-color: #f0f5f4;
   border-radius: 0.8rem;
   gap: 2rem; }
-  .index__main .index__nuestrasredes--section .index__nuestrasredes--section--div .index__nuestrasredes--section--div--article:hover, .contacto__main .contacto__redes--section .contacto__redes__div--instagram:hover, .contacto__main .contacto__redes--section .contacto__redes__div--facebook:hover, .contacto__main .contacto__redes--section .contacto__redes__div--whatsapp:hover {
-    box-shadow: 5px 5px 5px #c3415e;
-    transform: scale(1.1); }
+  @media (min-width: 770px) {
+    .index__main .index__nuestrasredes--section .index__nuestrasredes--section--div .index__nuestrasredes--section--div--article:hover, .contacto__main .contacto__redes--section .contacto__redes__div--instagram:hover, .contacto__main .contacto__redes--section .contacto__redes__div--facebook:hover, .contacto__main .contacto__redes--section .contacto__redes__div--whatsapp:hover {
+      box-shadow: 5px 5px 5px #c3415e;
+      transform: scale(1.1); } }
   .index__main .index__nuestrasredes--section .index__nuestrasredes--section--div .index__nuestrasredes--section--div--article:active, .contacto__main .contacto__redes--section .contacto__redes__div--instagram:active, .contacto__main .contacto__redes--section .contacto__redes__div--facebook:active, .contacto__main .contacto__redes--section .contacto__redes__div--whatsapp:active {
     transform: scale(0.9);
     box-shadow: inset 5px 5px 5px #b1a1a5; }
@@ -266,9 +269,10 @@ header nav div .navbarbr__div {
     border-radius: 1rem;
     font-size: calc(8px + (35 - 20) * (100vw - 320px) / (1920 - 320));
     font-weight: bold; }
-    header nav div .navbarbr__div .navbt__div a:hover {
-      box-shadow: 5px 5px 5px #c3415e;
-      transform: scale(1.1); }
+    @media (min-width: 770px) {
+      header nav div .navbarbr__div .navbt__div a:hover {
+        box-shadow: 5px 5px 5px #c3415e;
+        transform: scale(1.1); } }
     header nav div .navbarbr__div .navbt__div a:active {
       transform: scale(0.9);
       box-shadow: inset 5px 5px 5px #b1a1a5; }

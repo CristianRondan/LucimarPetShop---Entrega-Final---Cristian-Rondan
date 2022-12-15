@@ -81,9 +81,11 @@
         border-radius: 0.6rem;
         font-weight: bold;
         text-decoration: none;
-        &:hover{
-            box-shadow: 5px 5px 5px $color-bg-principal;
-            transform: scale(1.1);
+        @media (min-width: 770px) { 
+            &:hover{
+                box-shadow: 5px 5px 5px $color-bg-principal;
+                transform: scale(1.1);
+            }
         }
         &:active{
             transform: scale(0.9);
@@ -275,9 +277,11 @@
         font-weight: bold;
         padding: 0.6rem;
         border-radius: 0.6rem;
-        &:hover{
-            box-shadow: 5px 5px 5px #c3415e;
-            transform: scale(1.1);
+        @media (min-width: 770px) { 
+            &:hover{
+                box-shadow: 5px 5px 5px #c3415e;
+                transform: scale(1.1);
+            }
         }
         &:active{
             transform: scale(0.9);
@@ -295,9 +299,11 @@
     background-color: $color-secundario;
     border-radius: 0.8rem;
     gap: 2rem;
-    &:hover{
-        box-shadow: 5px 5px 5px $color-bg-principal;
-        transform: scale(1.1);
+    @media (min-width: 770px) { 
+        &:hover{
+            box-shadow: 5px 5px 5px $color-bg-principal;
+            transform: scale(1.1);
+        }
     }
     &:active{
         transform: scale(0.9);
