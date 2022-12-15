@@ -1,32 +1,115 @@
 /* estilos pagina contacto */
 
 .contacto__main{
-    /*estilos seccion presentacion */
+    // estilos seccion presentacion //
     .contacto__presentacion--section{
         @extend %estilos-seccion-presentacion;
-        .contacto__presentacion--section--div{
-            p{
-                text-align: left;
-            }
-            img{
-                width: 20%;
-            }
+    }
+    .contacto__redes--section{
+        padding: 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "titulo titulo"
+        "img-instagram link-instagram"
+        "barradiv-uno barradiv-uno"
+        "link-facebook img-facebook"
+        "barradiv-dos barradiv-dos"
+        "img-whatsapp link-whatsapp";
+        place-items: center;
+        gap: 2rem;
+        h2{
+            grid-area: titulo;
+            font-size: calc(18px + (35 - 20) * (100vw - 320px) / (1920 - 320));
+            font-weight: bold;
+            color: $color-secundario;
+        }
+        .contacto__redes__img--instagram{
+            grid-area: img-instagram;
+            width: 60%;
+        }
+        .contacto__redes__div--instagram{
+            grid-area: link-instagram;
+            @extend %estilos-contacto-links;
+        }
+        .contacto__barradivisora--uno{
+            grid-area: barradiv-uno;
+            height: 2px;
+            width: 80%;
+            border-radius: 5rem;
+            background-color: $color-secundario;
+            margin: 1rem;
+        }
+        .contacto__redes__div--facebook{
+            grid-area: link-facebook;
+            @extend %estilos-contacto-links;
+        }
+        .contacto__redes__img--facebook{
+            grid-area: img-facebook;
+            width: 70%;
+        }
+        .contacto__barradivisora--dos{
+            grid-area: barradiv-dos;
+            height: 2px;
+            width: 80%;
+            border-radius: 5rem;
+            background-color: $color-secundario;
+            margin: 1rem;
+        }
+        .contacto__redes__img--whatsapp{
+            grid-area: img-whatsapp;
+            width: 60%;
+        }
+        .contacto__redes__div--whatsapp{
+            grid-area: link-whatsapp;
+            @extend %estilos-contacto-links;
         }
     }
-    .contacto__instagram--section{
-        @extend %estilos-contacto-redes;
-    }
-    .contacto__facebook--section{
-        @extend %estilos-contacto-redes;
-        background-color: $color-secundario;
-        div{
-            background-color: $color-principal;
-            a{
-                color: $color-secundario;
-            }
+}
+
+/* media queri tablet pagina contacto */
+
+@media screen and (max-width:768px) {
+    .contacto__main{
+        .contacto__presentacion--section{
+            @include flex-col-center;
+        }
+        .contacto__redes--section{
+            @include flex-col-center;
         }
     }
-    .contacto__whatsapp--section{
-        @extend %estilos-contacto-redes;
+}
+
+/* media queri mobile pagina contacto */
+
+@media screen and (max-width:425px) {
+    .contacto__main{
+        .contacto__redes--section{
+            .contacto__redes__img--instagram{
+                width: 90%;
+            }
+            .contacto__redes__div--instagram{
+                a{
+                    font-size: 1rem;
+                }
+            }
+            .contacto__redes__img--facebook{
+                width: 90%;
+            }
+            .contacto__redes__div--facebook{
+                a{
+                    font-size: 1rem;
+                }
+            }
+            .contacto__redes__img--whatsapp{
+                width: 90%;
+            }
+            .contacto__redes__div--whatsapp{
+                a{
+                    font-size: 1rem;
+                }
+            }
+        }    
     }
 }

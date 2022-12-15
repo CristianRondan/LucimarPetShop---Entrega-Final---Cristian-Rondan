@@ -1,25 +1,54 @@
-/* estilos del main de index */
+/*------------------------ estilos del main de index -------------------------*/
 
 .index__main{
-    /* seccion presentacion */
+    // seccion presentacion //
     .index__presentacion--section{
         @extend %estilos-seccion-presentacion;
     }
-    /* seccion productos */
+    // seccion productos //
     .index__productos--section{
-        @extend %estilos-seccion-productos;
+        color: $color-secundario;
+        padding: 1.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "titulo titulo titulo"
+        "producto-uno producto-dos producto-tres";
+        h2{
+            grid-area: titulo;
+            text-align: center;
+            font-size: calc(18px + (35 - 20) * (100vw - 320px) / (1920 - 320));
+            padding: 1rem;
+            font-weight: bold;
+            }
+        .productos__article--uno{
+            grid-area: producto-uno;
+            @extend %estilos-card-productos;
+            margin-left: 20%;
+        }
+        .productos__article--dos{
+            grid-area: producto-dos;
+            @extend %estilos-card-productos;
+        } 
+        .productos__article--tres{
+            grid-area: producto-tres;
+            @extend %estilos-card-productos;
+            margin-right: 20%;
+        }    
     }
-    /* seccion donde estamos */
+    // seccion donde estamos //
     .index__dondeestamos--section{
         @extend %estilos-seccion-dondeestamos-link;
+        background-color: $color-secundario;
     }
-    /* seccion nuestras redes */
+    // seccion nuestras redes //
     .index__nuestrasredes--section{
         color: $color-secundario;
         padding: 1.8rem;
         h2{
             text-align: center;
-            font-size: 2rem;
+            font-size: calc(18px + (35 - 20) * (100vw - 320px) / (1920 - 320));
             padding: 1rem;
             font-weight: bold;
             }
@@ -29,21 +58,111 @@
             flex-wrap: wrap;
             margin: 1rem;
             padding: 0.7rem;
-            font-size: 1.5rem;
+            font-size: calc(10px + (35 - 20) * (100vw - 320px) / (1920 - 320));
             .index__nuestrasredes--section--div--article{
-                @extend %flexRowCenter;
+                @extend %estilos-contacto-links;
                 background-color: $color-secundario;
-                border-radius: 0.8rem;
-                padding: 0.8rem;
-                &:hover{
-                    box-shadow: 5px 5px 5px $color-bg-principal;
-                    transform: scale(1.1);
+            }
+        }
+    }
+}
+/* --------------------- media queri index laptop s -------------------*/
+
+@media screen and (max-width:1024px) {
+    .index__main{
+        .index__productos--section{
+            .productos__article--uno{
+                margin-left: 0;
+                div{
+                    @include medidas(12rem, 12rem);
                 }
-                a{
-                    color: $color-principal;
-                    font-weight: bold;
-                    padding: 0.5rem;
-                    text-decoration: none;
+            }
+            .productos__article--dos{
+                div{
+                    @include medidas(12rem, 12rem);
+                }
+            }
+            .productos__article--tres{
+                margin-right: 0;
+                div{
+                    @include medidas(12rem, 12rem);
+                }
+            }
+        }
+    }
+}
+
+/* --------------------- media q index tablet -------------------- */
+
+@media screen and (max-width:768px) {
+    // estilos del main //
+    .index__main{
+        .index__presentacion--section{
+            @include flex-col-center;
+        }
+        // estilos de seccion productos //
+        .index__productos--section{
+            @include flex-col-center;
+            .productos__article--uno{
+                @include md-seccion-productos-tablet;
+            }
+            .productos__article--dos{
+                @include md-seccion-productos-tablet;
+            }
+            .productos__article--tres{
+                @include md-seccion-productos-tablet;
+            }
+        }
+        // seccion donde estamos //
+        .index__dondeestamos--section{
+            @include flex-col-center;
+            gap: 1rem;
+            p{
+                text-align: center;
+            }
+        }
+        // seccion nuestras redes //
+        .index__nuestrasredes--section{
+            div{
+                @include flex-col-center;
+                gap: 2rem;
+            }
+        }
+    }
+}
+
+/*----------------------- index media queri mobile ----------------------------*/
+@media screen and (max-width:425px) {
+    // estilos del main //
+    .index__main{
+        .index__presentacion--section{
+            img{
+                width: 70%;
+            }
+        }
+        .index__productos--section{
+            .productos__article--uno{
+                div{
+                    @include medidas(12rem, 12rem);
+                }
+            }
+            .productos__article--dos{
+                div{
+                    @include medidas(12rem, 12rem);
+                }
+            }
+            .productos__article--tres{
+                div{
+                    @include medidas(12rem, 12rem);
+                }
+            }
+        }
+        .index__nuestrasredes--section{
+            .index__nuestrasredes--section--div{
+                .index__nuestrasredes--section--div--article{
+                    a{
+                        font-size: 1rem;
+                    }
                 }
             }
         }

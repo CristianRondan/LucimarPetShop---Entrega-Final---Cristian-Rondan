@@ -1,25 +1,164 @@
 /* estilos pagina perros */
 
 .perros__main{
-    /*estilos seccion presentacion */
+    // estilos seccion presentacion //
     .perros__presentacion--section{
         @extend %estilos-seccion-presentacion;
-        .perros__presentacion--section--div{
-            p{
-                text-align: right;
-            }
-        }
     }
-    /* seccion productos */
+    // seccion productos //
     .perros__productos--section{
         @extend %estilos-seccion-productos;
     }
-    /* perros cachorros */
+    // perros cachorros //
     .perros__cachorros--section{
         @extend %estilos-productos-primer-bloque;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "titulo titulo titulo"
+        "producto-uno producto-dos producto-tres";
+        h2{
+            grid-area: titulo;
+        }
+        .perros__cachorros--section--article--uno{
+            grid-area: producto-uno;
+        }
+        .perros__cachorros--section--article--dos{
+            grid-area: producto-dos;
+        }
+        .perros__cachorros--section--article--tres{
+            grid-area: producto-tres;
+        }    
     }
-    /* productos perros adultos */
+    // productos perros adultos //
     .perros__adultos--section{
         @extend %estilos-productos-segundo-bloque;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "titulo titulo titulo"
+        "producto-uno producto-dos producto-tres";
+        h2{
+            grid-area: titulo;
+        }
+        .perros__adultos--section--article--uno{
+            grid-area: producto-uno;
+        }
+        .perros__adultos--section--article--dos{
+            grid-area: producto-dos;
+        }
+        .perros__adultos--section--article--tres{
+            grid-area: producto-tres;
+        }    
+    }
+}
+
+
+/* --------------  media queri perros laptop L ------------------- */
+@media screen and (max-width:1200px) {
+    .perros__main{
+        .perros__cachorros--section{
+            @include md-seccion-productos-laptop-l();
+        }
+        .perros__adultos--section{
+            @include md-seccion-productos-laptop-l();
+        }
+    }
+}
+
+/* --------------  media queri perros laptop S ------------------- */
+@media screen and (max-width:1024px) {
+    .perros__main{
+        .perros__cachorros--section{
+            @include md-seccion-productos-laptop-s();
+        }
+        .perros__adultos--section{
+            @include md-seccion-productos-laptop-s();
+        }
+    }
+}
+
+/* ---------------------- media q perros tablet ---------------------------*/
+
+@media screen and (max-width:768px) {
+    .perros__main{
+        .perros__presentacion--section{
+            @include flex-col-center;
+            p{
+                text-align: center;
+            }
+        }
+        .perros__productos--section{
+            @include flex-col-center;
+            .productos__article--uno{
+                margin-left: 0;
+                @include md-seccion-productos-tablet;
+            }
+            .productos__article--dos{
+                margin-right: 0;
+                @include md-seccion-productos-tablet;
+            }
+        }
+        .perros__cachorros--section{
+            @include flex-col-center;
+            @include md-cards-tablet;
+        }
+        .perros__adultos--section{
+            @include flex-col-center;
+            @include md-cards-tablet;
+        }
+    }
+}
+
+
+// ---------------------------------------- media queri mobile ------------------------ //
+@media screen and (max-width:425px) {
+    /* estilos del main */
+    .perros__main{
+        .perros__productos--section{
+            h2{
+                font-size: 1rem;
+            }
+            .productos__article--uno{
+                @include md-seccion-productos-mobile;
+            }
+            .productos__article--dos{
+                @include md-seccion-productos-mobile;
+            }
+        }
+        .perros__cachorros--section{
+            h2{
+                font-size: 1rem;
+            }
+            .perros__cachorros--section--article--uno{
+                @include md-cards-mobile;
+            }
+            .perros__cachorros--section--article--dos{
+                @include md-cards-mobile;
+            }
+            .perros__cachorros--section--article--tres{
+                @include md-cards-mobile;
+            }
+        }
+        .perros__adultos--section{
+            h2{
+                font-size: 1rem;
+            }
+            .perros__adultos--section--article--uno{
+                @include md-cards-mobile;
+            }
+            .perros__adultos--section--article--dos{
+                @include md-cards-mobile;
+            }
+            .perros__adultos--section--article--tres{
+                @include md-cards-mobile;
+            }
+        }
     }
 }

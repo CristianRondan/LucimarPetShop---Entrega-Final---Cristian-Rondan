@@ -2,20 +2,30 @@
 
 footer{
     padding: 1rem;
+    padding-top: 2rem;
     background-color: $color-fondo-footer;
     nav{
+        div{
+            @include flex-row-center;
+            div{
+                height: 1px;
+                width: 80%;
+                background-color: $color-texto-footer;
+                margin-bottom: 1rem;
+            }
+        }
         .footer__nav--ul{
             display: flex;
             justify-content: space-between;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 5rem;
+            gap: 2.5rem;
             ul{
                 list-style: none;
-                padding: 1rem;
+                padding: 2rem;
                 h4{
                     a{
-                        font-size: 1rem;
+                        font-size: calc(4px + (30 - 20) * (100vw - 320px) / (1920 - 320));
                         text-decoration: none;
                         color: $color-texto-footer;    
                     }
@@ -25,7 +35,7 @@ footer{
                 }
                 li{
                     a{
-                        font-size: 1rem;
+                        font-size: calc(4px + (30 - 20) * (100vw - 320px) / (1920 - 320));
                         text-decoration: none;
                         color: $color-texto-footer;                        
                     }
@@ -35,16 +45,32 @@ footer{
                 }
                 }
             }
+
+            
     @media screen and (max-width:768px) {
-        .footer__nav--ul{
-            gap: 0;
-        }
-    }
-    @media screen and (max-width:425px) {
         .footer__nav--ul{
             flex-direction: column;
             justify-content: left;
             align-items: flex-start;
+            ul{
+                padding: 0;
+                h4{
+                    a{
+                        font-size: 0.8rem;
+                    }
+                }
+                li{
+                    a{
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+    @media screen and (max-width:425px) {
+        .footer__nav--ul{
             ul{
                 padding: 0;
                 h4{

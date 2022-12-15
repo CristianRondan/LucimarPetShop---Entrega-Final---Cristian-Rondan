@@ -3,38 +3,104 @@
 .nosotros__main{
     .nosotros__historia--section{
         @extend %estilos-seccion-presentacion;
-        div{
-            p{
-                width: 35%;
-                font-size: 1.3rem;
-                text-align: left;
-            }
-            img{
-                width: 35%;
-            }
+        p{
+            font-size: calc(5px + (35 - 20) * (100vw - 320px) / (1920 - 320));
+        }
+        img{
+            width: 80%;
         }
     }
     .nosotros__motivacion--section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        place-items: center;
+        grid-template-areas: 
+        "titulo titulo"
+        "img parrafo";
         color: $color-secundario;
         padding: 1.5rem;
+        padding-left: 10%;
+        padding-right: 10%;    
         h2{
+            grid-area: titulo;
+            font-size: calc(18px + (35 - 20) * (100vw - 320px) / (1920 - 320));
             text-align: center;
-            font-size: 2rem;
+            font-weight: bold;
+            padding: 1rem;    
+            }
+        img{
+            grid-area: img;
             padding: 1rem;
-            font-weight: bold;    
-        }
-        .nosotros__motivacion--section--div{
-            @extend %flexRowCenter;
-            flex-wrap: wrap;
-            gap: 15%;
-            padding: 1.5rem;
+            width: 80%;
+            }
+        p{
+            grid-area: parrafo;
+            text-align: right;
+            padding: 1rem;
+            font-size: calc(5px + (35 - 20) * (100vw - 320px) / (1920 - 320));
+            width: 70%;     
+            }
+    }
+}
+
+/* media queri tablet sobre nosotros */
+
+@media screen and (max-width: 768px) {
+    .nosotros__main{
+        .nosotros__historia--section{
+            @include flex-col-center;
+            gap: 1rem;
+            h1{
+                font-size: 1.6rem;
+            }
             p{
-                font-size: 1.3rem;
-                width: 35%;
-                text-align: right;
+                width: 80%;
+                text-align: center;
+                font-size: calc(15px + (35 - 20) * (100vw - 320px) / (1920 - 320));
             }
             img{
-                width: 35%;
+                width: 80%;
+            }
+        }
+        .nosotros__motivacion--section{
+            @include flex-col-center;
+            gap: 1rem;
+            h2{
+                font-size: 1.6rem;
+            }
+            img{
+                width: 80%;
+            }
+            p{
+                width: 80%;
+                text-align: center;
+                font-size: calc(15px + (35 - 20) * (100vw - 320px) / (1920 - 320));
+            }
+        }
+    }
+}
+
+/* media queris mobile sobre nosotros */ 
+
+@media screen and (max-width:425px) {
+    .nosotros__main{
+        .nosotros__historia--section{
+            padding: 0;
+            h1{
+                font-size: 1.3rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+        .nosotros__motivacion--section{
+            padding: 0;
+            h2{
+                font-size: 1.2rem;
+            }
+            p{
+                font-size: 1rem;
             }
         }
     }

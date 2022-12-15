@@ -1,39 +1,289 @@
 /* estilos pagina salud y bienestar */
 
 .salud__main{
-    /* estilos presentacion */
+    // estilos presentacion //
     .salud__presentacion--section{
         @extend %estilos-seccion-presentacion;
-        .salud__presentacion--section--div{
-            img{
-                width: 12%;
-            }
+        img{
+            width: 30%;
         }
     }
-    /* seccion productos */
+    // seccion productos //
     .salud__productos--section{
         @extend %estilos-seccion-productos;
     }
-    /* seccion shampoos */
+    // seccion shampoos //
     .salud__shampoos--section{
         @extend %estilos-productos-primer-bloque;
-        div{
-            article{
-                p{
-                    height: 5rem;
-                }
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "titulo titulo titulo"
+        "producto-uno producto-dos producto-tres";
+        h2{
+            grid-area: titulo;
+        }
+        .salud__shampoos--section--article--uno{
+            grid-area: producto-uno;
+            height: 27rem;
+        }
+        .salud__shampoos--section--article--dos{
+            grid-area: producto-dos;
+            height: 27rem;
+        }
+        .salud__shampoos--section--article--tres{
+            grid-area: producto-tres;
+            height: 27rem;
+        }
+    }
+    // seccion pipetas //
+    .salud__pipetas--section{
+        @extend %estilos-productos-segundo-bloque;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        row-gap: 2rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "titulo titulo titulo"
+        "producto-uno producto-dos producto-tres"
+        "producto-cuatro producto-cinco producto-seis";
+        h2{
+            grid-area: titulo;
+        }
+        .salud__pipetas--section--article--uno{
+            grid-area: producto-uno;
+            height: 30rem;
+        }
+        .salud__pipetas--section--article--dos{
+            grid-area: producto-dos;
+            height: 30rem;
+        }
+        .salud__pipetas--section--article--tres{
+            grid-area: producto-tres;
+            height: 30rem;
+        }
+        .salud__pipetas--section--article--cuatro{
+            grid-area: producto-cuatro;
+            height: 30rem;
+        }    
+        .salud__pipetas--section--article--cinco{
+            grid-area: producto-cinco;
+            height: 30rem;
+        }    
+        .salud__pipetas--section--article--seis{
+            grid-area: producto-seis;
+            height: 30rem;
+        }    
+    }
+}
+
+/* --------------  media queri salud y bienestar laptop L ------------------- */
+@media screen and (max-width:1200px) {
+    .salud__main{
+        .salud__shampoos--section{
+            @include md-seccion-productos-laptop-l();
+            .salud__shampoos--section--article--uno{
+                height: 22rem;
+            }
+            .salud__shampoos--section--article--dos{
+                height: 22rem;
+            }
+            .salud__shampoos--section--article--tres{
+                height: 22rem;
+            }
+        }
+        .salud__pipetas--section{
+            @include md-seccion-productos-laptop-l();
+            .salud__pipetas--section--article--uno{
+                height: 25rem;
+            }
+            .salud__pipetas--section--article--dos{
+                height: 25rem;
+            }
+            .salud__pipetas--section--article--tres{
+                height: 25rem;
+            }
+            .salud__pipetas--section--article--cuatro{
+                height: 25rem;
+            }    
+            .salud__pipetas--section--article--cinco{
+                height: 25rem;
+            }    
+            .salud__pipetas--section--article--seis{
+                height: 25rem;
+            }    
+        }
+    }
+}
+
+/* --------------  media queri salud y bienestar laptop S ------------------- */
+@media screen and (max-width:1024px) {
+    .salud__main{
+        .salud__shampoos--section{
+            @include md-seccion-productos-laptop-s();
+            .salud__shampoos--section--article--uno{
+                height: 19rem;
+            }
+            .salud__shampoos--section--article--dos{
+                height: 19rem;
+            }
+            .salud__shampoos--section--article--tres{
+                height: 19rem;
+            }
+        }
+        .salud__pipetas--section{
+            @include md-seccion-productos-laptop-s();
+            .salud__pipetas--section--article--uno{
+                height: 22rem;
+            }
+            .salud__pipetas--section--article--dos{
+                height: 22rem;
+            }
+            .salud__pipetas--section--article--tres{
+                height: 22rem;
+            }
+            .salud__pipetas--section--article--cuatro{
+                height: 22rem;
+            }    
+            .salud__pipetas--section--article--cinco{
+                height: 22rem;
+            }    
+            .salud__pipetas--section--article--seis{
+                height: 22rem;
             }
         }
     }
-    /* seccion pipetas */
-    .salud__pipetas--section{
-        @extend %estilos-productos-segundo-bloque;
-        div{
-            column-gap: 8rem;
-            article{
-                p{
-                    height: 8rem;
-                }
+}
+
+/* ---------------------- media q salud y bienestar tablet ---------------------------*/
+
+@media screen and (max-width:768px) {
+    .salud__main{
+        .salud__presentacion--section{
+            @include flex-col-center;
+            p{
+                text-align: center;
+            }
+        }
+        .salud__productos--section{
+            @include flex-col-center;
+            .productos__article--uno{
+                margin-left: 0;
+                @include md-seccion-productos-tablet;
+            }
+            .productos__article--dos{
+                margin-right: 0;
+                @include md-seccion-productos-tablet;
+            }
+        }
+        .salud__shampoos--section{
+            @include flex-col-center;
+            @include md-cards-tablet;
+            .salud__shampoos--section--article--uno{
+                height: 28rem;
+            }
+            .salud__shampoos--section--article--dos{
+                height: 28rem;
+            }
+            .salud__shampoos--section--article--tres{
+                height: 28rem;
+            }
+        }
+        .salud__pipetas--section{
+            @include flex-col-center;
+            @include md-cards-tablet;
+            .salud__pipetas--section--article--uno{
+                height: 30rem;
+            }
+            .salud__pipetas--section--article--dos{
+                height: 30rem;
+            }
+            .salud__pipetas--section--article--tres{
+                height: 30rem;
+            }
+            .salud__pipetas--section--article--cuatro{
+                height: 30rem;
+            }    
+            .salud__pipetas--section--article--cinco{
+                height: 30rem;
+            }    
+            .salud__pipetas--section--article--seis{
+                height: 30rem;
+            }
+        }
+    }
+}
+
+
+// ---------------------------------------- media queri mobile ------------------------ //
+@media screen and (max-width:425px) {
+    /* estilos del main */
+    .salud__main{
+        .salud__presentacion--section{
+            img{
+                width: 50%;
+            }
+        }
+        .salud__productos--section{
+            h2{
+                font-size: 1rem;
+            }
+            .productos__article--uno{
+                @include md-seccion-productos-mobile;
+            }
+            .productos__article--dos{
+                @include md-seccion-productos-mobile;
+            }
+        }
+        .salud__shampoos--section{
+            h2{
+                font-size: 1rem;
+            }
+            .salud__shampoos--section--article--uno{
+                @include md-cards-mobile;
+                height: 23rem;
+            }
+            .salud__shampoos--section--article--dos{
+                @include md-cards-mobile;
+                height: 23rem;
+            }
+            .salud__shampoos--section--article--tres{
+                @include md-cards-mobile;
+                height: 23rem;
+            }
+        }
+        .salud__pipetas--section{
+            h2{
+                font-size: 1rem;
+            }
+            .salud__pipetas--section--article--uno{
+                @include md-cards-mobile;
+                height: 25rem;
+            }
+            .salud__pipetas--section--article--dos{
+                @include md-cards-mobile;
+                height: 25rem;
+            }
+            .salud__pipetas--section--article--tres{
+                @include md-cards-mobile;
+                height: 25rem;
+            }
+            .salud__pipetas--section--article--cuatro{
+                @include md-cards-mobile;
+                height: 25rem;
+            }
+            .salud__pipetas--section--article--cinco{
+                @include md-cards-mobile;
+                height: 25rem;
+            }
+            .salud__pipetas--section--article--seis{
+                @include md-cards-mobile;
+                height: 25rem;
             }
         }
     }

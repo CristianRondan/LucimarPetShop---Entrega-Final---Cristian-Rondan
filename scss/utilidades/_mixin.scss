@@ -17,3 +17,94 @@
     width: $ancho;
     height: $alto;
 }
+
+// ---------- medidas para las secciones de las paginas -perros- y -gatos-  -----------------//
+
+// medidas para la preseleccion de productos en tamaño laptop L //
+
+@mixin md-seccion-productos-laptop-l{
+    article{
+        @include medidas(18rem, 30rem);
+        div{
+            @include medidas(12rem, 12rem);
+        }
+        p{
+            font-size: 0.8rem;
+            @include medidas(15rem, 10rem);
+        }
+    }
+}
+
+// medidas para la preseleccion de productos en tamaño laptop S //
+
+@mixin md-seccion-productos-laptop-s{
+    article{
+        @include medidas(13rem, 26rem);
+        div{
+            @include medidas(10rem, 10rem);
+        }
+        p{
+            font-size: 0.7rem;
+            @include medidas(13rem, 8rem);
+        }
+    }
+}
+
+// medidas para la preseleccion de productos en tamaño tablet //
+@mixin md-seccion-productos-tablet{
+    h3{
+        font-size: calc(20px + (35 - 20) * (100vw - 320px) / (1920 - 320));
+    }
+    a{
+        font-size: calc(20px + (35 - 20) * (100vw - 320px) / (1920 - 320));
+    }
+    div{
+        @include medidas(18rem, 18rem);
+    }
+}
+
+// medidas para las cards de productos en tamaño tablet //
+
+@mixin md-cards-tablet{
+    gap: 2rem;
+    article{
+        @include medidas(24rem, 35rem);
+        div{
+            @include medidas(18rem, 18rem);
+        }
+        p{
+            font-size: 0.9rem;
+            @include medidas(17rem, 13rem);
+        }    
+    }
+}
+
+// medidas para la preseleccion de productos en tamaño mobile //
+
+@mixin md-seccion-productos-mobile{
+    h3{
+        font-size: 1rem;
+    }
+    div{
+        @include medidas(12rem, 12rem);
+    }
+    a{
+        font-size: 1rem;
+    }    
+}
+
+// medidas para las cards de productos en tamaño mobile //
+
+@mixin md-cards-mobile{
+    @include medidas(18rem, 32rem);
+    h3{
+        font-size: 1rem;
+    }
+    div{
+        @include medidas(12rem, 12rem);
+    }
+    p{
+        font-size: 1rem;
+        @include medidas(17rem, 20rem);
+    }
+}
